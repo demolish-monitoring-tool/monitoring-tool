@@ -83,42 +83,44 @@ const isActive = (href: string): boolean => {
           <div class="menu-wrap">
             <div class="close-mobile-menu">x</div>
             <div class="region region-primary-menu">
+              {/* Language switcher (uncomment to re-enable)
               <div
                 class="language-switcher-language-url block block-languages-dropdown block-lang-drop-bootstraplanguage-interface"
                 id="block-vani-languageswitcherbootstrap"
               >
-                <div class="btn-group">
-                  <button
-                    class="btn btn-default btn- dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    aria-label="Select language"
-                  >
-                    <span class="lang-sm" lang={lang}></span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu">
-                    <li>
-                      <a href={switchUrls.en}>
-                        <span class="lang-sm lang-lbl" lang="en"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href={switchUrls.el}>
-                        <span class="lang-sm lang-lbl" lang="el"></span>
-                      </a>
-                    </li>
-                  </ul>
+                <div class="block-content">
+                  <div class="btn-group">
+                    <button
+                      class="btn btn-default btn- dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      aria-label="Select language"
+                    >
+                      <span class="lang-sm" lang={lang}></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li>
+                        <a href={switchUrls.en}>
+                          <span class="lang-sm lang-lbl" lang="en"></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href={switchUrls.el}>
+                          <span class="lang-sm lang-lbl" lang="el"></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+              */}
 
               <nav
                 role="navigation"
-                aria-labelledby="block-vani-main-menu-menu"
                 id="block-vani-main-menu"
                 class="block block-menu navigation menu--main"
               >
-                <h2 class="visually-hidden" id="block-vani-main-menu-menu">Main navigation</h2>
                 <ul class="main-menu">
                   {
                     menuItems.map((item) => {

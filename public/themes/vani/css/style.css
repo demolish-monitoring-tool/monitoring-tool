@@ -267,8 +267,13 @@ acronym {
 ---------------------------------------- */
 img,
 picture,
-figure,
-svg {
+figure {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg:not(#react-app svg) {
   display: block;
   max-width: 100%;
   height: auto;
@@ -373,10 +378,10 @@ select {
   text-transform: none;
 }
 
-button,
-[type=button],
-[type=reset],
-[type=submit] {
+button:not(.MuiButtonBase-root),
+[type=button]:not(.MuiButtonBase-root),
+[type=reset]:not(.MuiButtonBase-root),
+[type=submit]:not(.MuiButtonBase-root) {
   position: relative;
   cursor: pointer;
   border: 0;
@@ -388,10 +393,10 @@ button,
   transition: all 0.3s ease-in-out;
 }
 
-button:hover,
-[type=button]:hover,
-[type=reset]:hover,
-[type=submit]:hover {
+button:not(.MuiButtonBase-root):hover,
+[type=button]:not(.MuiButtonBase-root):hover,
+[type=reset]:not(.MuiButtonBase-root):hover,
+[type=submit]:not(.MuiButtonBase-root):hover {
   background: var(--theme-color-two);
   color: #ffffff;
 }
