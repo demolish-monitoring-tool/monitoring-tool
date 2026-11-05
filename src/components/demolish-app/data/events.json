@@ -1,0 +1,1316 @@
+  [
+    {
+      "group": "Albanians",
+      "eventType": "AssaultLife",
+      "city": "Kavala",
+      "date": "2021-10-11"
+    },
+    {
+      "group": "Albanians",
+      "eventType": "VerbalAttack",
+      "city": "Athens",
+      "date": "2020-06-23"
+    },
+    {
+      "group": "Albanians",
+      "eventType": "VerbalAttack",
+      "city": "Athens",
+      "date": "2019-01-21"
+    },
+    {
+      "group": "Albanians",
+      "eventType": "ViolentAssault",
+      "city": "Aspropyrgos",
+      "date": "2019-12-01"
+    },
+    {
+      "group": "Albanians",
+      "eventType": "AssaultLife",
+      "city": "Kavala",
+      "date": "2018-12-05"
+    },
+    {
+      "group": "Albanians",
+      "eventType": "AssaultLife",
+      "city": "Kerkyra",
+      "date": "2018-12-03"
+    },
+    {
+      "group": "Albanians",
+      "eventType": "AssaultLife",
+      "city": "Athens",
+      "date": "2016-08-18"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "Thessaloniki",
+      "date": "2022-05-04"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "AssaultLife",
+      "city": "Athens",
+      "date": "2022-05-04"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "Piraeus",
+      "date": "2021-10-29"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "OropedioLasithiou",
+      "date": "2021-08-23"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "VerbalAttack",
+      "city": "Salamina",
+      "date": "2019-03-19"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "Larissa",
+      "date": "2019-02-08"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "Thessaloniki",
+      "date": "2018-06-25"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "Assault",
+      "city": "Athens",
+      "date": "2018-05-15"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "Piraeus",
+      "date": "2017-11-23"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "Assault",
+      "city": "Athens",
+      "date": "2017-11-26"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "AssaultLife",
+      "city": "Aspropyrgos",
+      "date": "2017-10-08"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "Assault",
+      "city": "Aspropyrgos",
+      "date": "2017-05-15"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "AssaultLife",
+      "city": "Aspropyrgos",
+      "date": "2017-02-02"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "Elefsina",
+      "date": "2017-01-11"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "AgioiAnargyroi-Kamatero",
+      "date": "2016-10-07"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "Kos",
+      "date": "2015-08-10"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "Agrinio",
+      "date": "2015-07-29"
+    },
+    {
+      "group": "Pakistanis",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2015-02-17"
+    },
+    {
+      "group": "Muslims",
+      "eventType": "ReligiousAttack",
+      "city": "Xanthi",
+      "date": "2022-03-18"
+    },
+    {
+      "group": "Muslims",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2022-05-08"
+    },
+    {
+      "group": "Muslims",
+      "eventType": "AssaultLife",
+      "city": "Athens",
+      "date": "2022-05-03"
+    },
+    {
+      "group": "Muslims",
+      "eventType": "ReligiousAttack",
+      "city": "Alexandroupoli",
+      "date": "2019-05-29"
+    },
+    {
+      "group": "Muslims",
+      "eventType": "Assault",
+      "city": "Athens",
+      "date": "2018-03-07"
+    },
+    {
+      "group": "Muslims",
+      "eventType": "Assault",
+      "city": "Athens",
+      "date": "2016-08-04"
+    },
+    {
+      "group": "Muslims",
+      "eventType": "VerbalAttack",
+      "city": "Athens",
+      "date": "2018-03-22"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Thessaloniki",
+      "date": "2022-12-29"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Athens",
+      "date": "2021-03-31"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Athens",
+      "date": "2020-10-05"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Thessaloniki",
+      "date": "2020-10-19"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Drama",
+      "date": "2020-12-30"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Larissa",
+      "date": "2020-12-07"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Thessaloniki",
+      "date": "2019-01-28"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Trikala",
+      "date": "2019-12-31"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Thessaloniki",
+      "date": "2018-12-16"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Thessaloniki",
+      "date": "2018-06-28"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Kastoria",
+      "date": "2018-12-27"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Thessaloniki",
+      "date": "2018-01-29"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Thessaloniki",
+      "date": "2018-07-11"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Larissa",
+      "date": "2017-07-19"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Ioannina",
+      "date": "2016-09-13"
+    },
+    {
+      "group": "Jews",
+      "eventType": "ReligiousAttack",
+      "city": "Kavala",
+      "date": "2015-06-23"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Kavala",
+      "date": "2022-08-10"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Rethymno",
+      "date": "2022-10-03"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Athens",
+      "date": "2022-05-06"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Argos-Mykines",
+      "date": "2022-07-29"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Chania",
+      "date": "2022-06-10"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Athens",
+      "date": "2022-05-03"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2022-11-05"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2022-01-24"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens ",
+      "date": "2022-08-18"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2022-06-20"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2022-09-05"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Athens",
+      "date": "2022-05-08"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Thessaloniki",
+      "date": "2021-11-03"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Schimatari",
+      "date": "2021-11-16"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Alexandroupoli",
+      "date": "2021-09-03"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Kos",
+      "date": "2021-03-26"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Kavala",
+      "date": "2021-10-14"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Athens",
+      "date": "2021-12-27"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Thessaloniki",
+      "date": "2021-09-29"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "OropedioLasithiou",
+      "date": "2021-08-13"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "PropertyAttack",
+      "city": "Piraeus",
+      "date": "2021-10-30"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Athens",
+      "date": "2021-05-08"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Thessaloniki",
+      "date": "2020-01-14"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Rhodos",
+      "date": "2020-03-20"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Kos",
+      "date": "2020-03-05"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "PropertyGeneral",
+      "city": "Irakleio",
+      "date": "2020-02-21"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Lesvos",
+      "date": "2020-04-24"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Vartholomio",
+      "date": "2020-10-20"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2020-09-14"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "PropertyAttack",
+      "city": "OropedioLasithiou",
+      "date": "2020-09-17"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Keratsini-Drapetsona",
+      "date": "2020-04-23"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Lesvos",
+      "date": "2020-02-05"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "SexualAssault",
+      "city": "Kerkyra",
+      "date": "2020-05-24"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Marathon",
+      "date": "2020-01-28"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Aspropyrgos",
+      "date": "2020-06-24"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Lesvos",
+      "date": "2020-12-12"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Lamia",
+      "date": "2020-08-05"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Alexandroupoli",
+      "date": "2020-03-10"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Salamina",
+      "date": "2019-03-19"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Σπάτα ",
+      "date": "2019-07-29"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Kilkis",
+      "date": "2019-08-24"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Athens",
+      "date": "2019-07-25"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Alexandroupoli ",
+      "date": "2019-04-22"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Kalymnos",
+      "date": "2019-04-03"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Katerini",
+      "date": "2019-02-20"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Chania",
+      "date": "2019-10-01"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Aspropyrgos",
+      "date": "2019-12-01"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Rethymno",
+      "date": "2019-08-08"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2019-12-10"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Pserimos",
+      "date": "2019-12-28"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Chania",
+      "date": "2019-12-18"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2019-03-21"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Samos",
+      "date": "2019-12-17"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2019-02-21"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Larissa",
+      "date": "2019-02-20"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Thessaloniki",
+      "date": "2019-11-08"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Acharnes",
+      "date": "2018-06-18"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Lesvos",
+      "date": "2018-12-11"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Rethymno",
+      "date": "2018-05-01"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2018-05-15"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Lesvos",
+      "date": "2018-09-06"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Μύκονος",
+      "date": "2018-09-20"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Αχαΐα",
+      "date": "2018-07-22"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Athens",
+      "date": "2018-01-18"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2018-12-24"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Lesvos",
+      "date": "2018-02-22"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Lesvos",
+      "date": "2018-10-20"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Chios",
+      "date": "2018-03-02"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Thessaloniki",
+      "date": "2018-07-25"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Piraeus",
+      "date": "2018-09-26"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Thessaloniki",
+      "date": "2018-07-20"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Μανωλάδα",
+      "date": "2018-10-30"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "PropertyAttack",
+      "city": "Ωρωπός",
+      "date": "2018-03-30"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Lesvos",
+      "date": "2018-10-20"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Thessaloniki",
+      "date": "2018-09-11"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Μυτιλήνη",
+      "date": "2018-04-23"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Aspropyrgos",
+      "date": "2018-09-17"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Thessaloniki",
+      "date": "2018-04-11"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Athens",
+      "date": "2018-03-06"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Athens",
+      "date": "2017-07-22"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Aspropyrgos",
+      "date": "2017-10-09"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2017-09-05"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2017-10-10"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Katerini",
+      "date": "2017-05-18"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Aspropyrgos",
+      "date": "2017-06-19"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Chios",
+      "date": "2017-04-24"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Aspropyrgos",
+      "date": "2017-02-02"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Καλαμάτα",
+      "date": "2017-04-12"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Rhodos",
+      "date": "2017-08-02"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Σπάρτη ",
+      "date": "2017-12-07"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Piraeus",
+      "date": "2017-11-23"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2017-11-03"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Acharnes",
+      "date": "2017-06-30"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Aspropyrgos",
+      "date": "2017-05-15"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Patras",
+      "date": "2017-10-27"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Lesvos",
+      "date": "2016-09-22"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Samos",
+      "date": "2016-11-09"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Athens",
+      "date": "2016-02-17"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Athens",
+      "date": "2016-12-04"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Rhodos",
+      "date": "2016-11-22"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Lesvos",
+      "date": "2016-06-29"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2016-10-07"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Chios",
+      "date": "2016-09-14"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Lesvos",
+      "date": "2015-10-08"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Athens ",
+      "date": "2015-02-17"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "AssaultLife",
+      "city": "Lesvos",
+      "date": "2015-09-06"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "VerbalAttack",
+      "city": "Chania",
+      "date": "2015-03-26"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2015-12-02"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "PropertyAttack",
+      "city": "Piraeus",
+      "date": "2015-04-19"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Kos",
+      "date": "2015-09-05"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Kos",
+      "date": "2015-08-10"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Idomeni",
+      "date": "2015-12-09"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Kilkis",
+      "date": "2015-08-22"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "Assault",
+      "city": "Kos",
+      "date": "2015-08-20"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2015-05-15"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2015-04-28"
+    },
+    {
+      "group": "Migrants",
+      "eventType": "ViolentAssault",
+      "city": "Kos",
+      "date": "2015-08-11"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Thessaloniki",
+      "date": "2022-01-28"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Alexandroupoli",
+      "date": "2022-06-28"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2022-08-19"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Alexandroupoli",
+      "date": "2022-07-26"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Thessaloniki",
+      "date": "2021-09-28"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Athens",
+      "date": "2021-04-18"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "VerbalAttack",
+      "city": "Thessaloniki",
+      "date": "2020-01-14"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Lesvos",
+      "date": "2020-09-14"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Alexandroupoli",
+      "date": "2020-03-10"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Lesvos",
+      "date": "2020-02-03"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Lesvos",
+      "date": "2020-12-11"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Lesvos",
+      "date": "2020-03-07"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Lesvos",
+      "date": "2020-02-04"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Lesvos",
+      "date": "2020-04-23"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Kos",
+      "date": "2020-02-23"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Rhodos",
+      "date": "2020-03-29"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Lesvos",
+      "date": "2020-06-29"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Konitsa",
+      "date": "2019-03-24"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "VerbalAttack",
+      "city": "Samos",
+      "date": "2019-12-17"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Thessaloniki",
+      "date": "2019-01-08"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Athens",
+      "date": "2019-03-21"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Lesvos",
+      "date": "2019-04-08"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "VerbalAttack",
+      "city": "Vilia",
+      "date": "2019-03-19"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Lesvos",
+      "date": "2018-04-26"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Chios",
+      "date": "2018-02-27"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Lesvos",
+      "date": "2018-07-11"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Patras",
+      "date": "2018-03-07"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "VerbalAttack",
+      "city": "Lesvos",
+      "date": "2018-10-20"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Lesvos",
+      "date": "2018-04-22"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Chios",
+      "date": "2018-03-02"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ReligiousAttack",
+      "city": "Lesvos",
+      "date": "2018-09-07"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Chios",
+      "date": "2018-02-27"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Lesvos",
+      "date": "2018-09-06"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Chios",
+      "date": "2017-04-21"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Leros",
+      "date": "2017-05-05"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Perama",
+      "date": "2017-07-17"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Chios",
+      "date": "2016-12-21"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Paionia",
+      "date": "2016-04-21"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Chios",
+      "date": "2016-06-07"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Kos",
+      "date": "2016-08-28"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "VerbalAttack",
+      "city": "Lesvos",
+      "date": "2016-09-22"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Chios",
+      "date": "2016-04-11"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Athens",
+      "date": "2016-10-01"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Chios",
+      "date": "2016-11-18"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Leros",
+      "date": "2016-07-12"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "PropertyAttack",
+      "city": "Athens",
+      "date": "2016-09-08"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Thessaloniki",
+      "date": "2016-11-04"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Thessaloniki",
+      "date": "2016-09-13"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Chios",
+      "date": "2016-08-23"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Lesvos",
+      "date": "2015-10-09"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Kos",
+      "date": "2015-09-05"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "AssaultLife",
+      "city": "Lesvos",
+      "date": "2015-09-08"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "Assault",
+      "city": "Kos",
+      "date": "2015-09-04"
+    },
+    {
+      "group": "Refugees",
+      "eventType": "ViolentAssault",
+      "city": "Kos",
+      "date": "2015-08-11"
+    }
+  ]

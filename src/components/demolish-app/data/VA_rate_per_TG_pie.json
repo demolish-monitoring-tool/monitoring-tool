@@ -1,0 +1,38 @@
+[
+  {
+    "id": "Albanians",
+    "label": "Albanians",
+    "value": 0.066533644,
+    "color": "hsl(265, 70%, 50%)"
+  },
+  {
+    "id": "Pakistanis",
+    "label": "Pakistanis",
+    "value": 0.092779718,
+    "color": "hsl(175, 70%, 50%)"
+  },
+  {
+    "id": "Muslims",
+    "label": "Muslims",
+    "value": 0.099427398,
+    "color": "hsl(250, 70%, 50%)"
+  },
+  {
+    "id": "Jews",
+    "label": "Jews",
+    "value": 0.051536319,
+    "color": "hsl(107, 70%, 50%)"
+  },
+  {
+    "id": "Migrants",
+    "label": "Migrants",
+    "value": 0.11959459,
+    "color": "hsl(206, 70%, 50%)"
+  },
+  {
+    "id": "Refugees",
+    "label": "Refugees",
+    "value": 0.018536537,
+    "color": "hsl(206, 70%, 50%)"
+  }
+]

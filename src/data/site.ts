@@ -27,4 +27,5 @@ export const navItems: NavItem[] = [
   { label: 'Services', href: '/services' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
+  { label: 'Monitoring tool', href: '/va-monitoring-tool' },
 ];

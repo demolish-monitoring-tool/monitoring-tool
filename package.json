@@ -25,14 +25,34 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^7.1.2",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.5.0",
+    "@mui/material": "^9.5.0",
+    "@nivo/bar": "^0.99.0",
+    "@nivo/bump": "^0.99.0",
+    "@nivo/funnel": "^0.99.0",
+    "@nivo/line": "^0.99.0",
+    "@nivo/pie": "^0.99.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "astro": "^7.4.1",
-    "bulma": "^1.0.4"
+    "bulma": "^1.0.4",
+    "d3-scale": "^4.0.3",
+    "prop-types": "^15.8.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-simple-maps": "^5.0.5",
+    "react-tagcloud": "^2.3.3",
+    "styled-components": "^6.6.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.11",
     "sass": "^1.106.0",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vite-plugin-svgr": "^5.2.0"
   }
 }

@@ -1,0 +1,68 @@
+[
+    {
+      "group": "Albanians",
+      "Assault": 0,
+      "AssaultLife": 4,
+      "PropertyAttack": 0,
+      "PropertyGeneral": 0,
+      "ReligiousAttack": 0,
+      "SexualAssault": 0,
+      "VerbalAttack": 2,
+      "ViolentAssault": 1
+    },
+    {
+      "group": "Jews",
+      "Assault": 0,
+      "AssaultLife": 0,
+      "PropertyAttack": 0,
+      "PropertyGeneral": 0,
+      "ReligiousAttack": 16,
+      "SexualAssault": 0,
+      "VerbalAttack": 0,
+      "ViolentAssault": 0
+    },
+    {
+      "group": "Migrants",
+      "Assault": 25,
+      "AssaultLife": 21,
+      "PropertyAttack": 4,
+      "PropertyGeneral": 1,
+      "ReligiousAttack": 0,
+      "SexualAssault": 1,
+      "VerbalAttack": 12,
+      "ViolentAssault": 57
+    },
+    {
+      "group": "Muslims",
+      "Assault": 2,
+      "AssaultLife": 1,
+      "PropertyAttack": 0,
+      "PropertyGeneral": 0,
+      "ReligiousAttack": 2,
+      "SexualAssault": 0,
+      "VerbalAttack": 1,
+      "ViolentAssault": 1
+    },
+    {
+      "group": "Pakistanis",
+      "Assault": 3,
+      "AssaultLife": 3,
+      "PropertyAttack": 0,
+      "PropertyGeneral": 0,
+      "ReligiousAttack": 0,
+      "SexualAssault": 0,
+      "VerbalAttack": 1,
+      "ViolentAssault": 11
+    },
+    {
+      "group": "Refugees",
+      "Assault": 11,
+      "AssaultLife": 13,
+      "PropertyAttack": 1,
+      "PropertyGeneral": 0,
+      "ReligiousAttack": 1,
+      "SexualAssault": 0,
+      "VerbalAttack": 5,
+      "ViolentAssault": 25
+    }
+  ]
