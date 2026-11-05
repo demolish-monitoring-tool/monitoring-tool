@@ -150,8 +150,8 @@
         "summary": null,
         "body_format": "html",
         "block_item_redirect_to": {
-            "uri": "internal:/project/results",
-            "url": "/project/results",
+            "uri": "internal:/va-monitoring-tool",
+            "url": "/va-monitoring-tool",
             "title": "Read more"
         },
         "ordering": "3",
@@ -187,8 +187,8 @@
         "summary": null,
         "body_format": "html",
         "block_item_redirect_to": {
-            "uri": "internal:/project/results",
-            "url": "/project/results",
+            "uri": "internal:/va-monitoring-tool",
+            "url": "/va-monitoring-tool",
             "title": "Read more"
         },
         "ordering": "3",

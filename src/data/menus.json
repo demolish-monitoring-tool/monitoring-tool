@@ -275,22 +275,6 @@
                             "uri": "internal:/methodology/linking-hate-speech-and-hate-crime",
                             "url": "/methodology/linking-hate-speech-and-hate-crime",
                             "children": []
-                        },
-                        {
-                            "id": 19,
-                            "uuid": "c4a32e23-9a31-4c41-a057-c6e8efa2654d",
-                            "menu_name": "main",
-                            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
-                            "weight": -47,
-                            "expanded": false,
-                            "enabled": true,
-                            "langcode": "en",
-                            "is_fallback_translation": false,
-                            "title": "Ethics",
-                            "description": null,
-                            "uri": "internal:#",
-                            "url": "#",
-                            "children": []
                         }
                     ]
                 },
@@ -685,22 +669,6 @@
                             "description": null,
                             "uri": "internal:/methodology/linking-hate-speech-and-hate-crime",
                             "url": "/methodology/linking-hate-speech-and-hate-crime",
-                            "children": []
-                        },
-                        {
-                            "id": 19,
-                            "uuid": "c4a32e23-9a31-4c41-a057-c6e8efa2654d",
-                            "menu_name": "main",
-                            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
-                            "weight": -47,
-                            "expanded": false,
-                            "enabled": true,
-                            "langcode": "en",
-                            "is_fallback_translation": true,
-                            "title": "Ethics",
-                            "description": null,
-                            "uri": "internal:#",
-                            "url": "#",
                             "children": []
                         }
                     ]
@@ -1312,24 +1280,6 @@
                 "en": {
                     "langcode": "en",
                     "title": "Contribution",
-                    "description": null,
-                    "uri": "internal:#",
-                    "url": "#"
-                }
-            }
-        },
-        {
-            "id": 19,
-            "uuid": "c4a32e23-9a31-4c41-a057-c6e8efa2654d",
-            "menu_name": "main",
-            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
-            "weight": -47,
-            "expanded": false,
-            "enabled": true,
-            "translations": {
-                "en": {
-                    "langcode": "en",
-                    "title": "Ethics",
                     "description": null,
                     "uri": "internal:#",
                     "url": "#"
