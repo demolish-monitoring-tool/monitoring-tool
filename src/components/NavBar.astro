@@ -67,13 +67,11 @@ const isActive = (href: string): boolean => {
   <div class="container">
     <div class="header-main">
       <div class="site-brand">
-        <div class="region region-header">
-          <div id="block-vani-branding" class="site-branding block block-system block-system-branding-block">
-            <div class="site-logo">
-              <a href={homeUrl} title="Home" rel="home">
-                <img src="/files/path_newFont_bold.png" alt="Home" />
-              </a>
-            </div>
+        <div class="site-branding">
+          <div class="site-logo">
+            <a href={homeUrl} title="Home" rel="home">
+              <img src="/files/path_newFont_bold.png" alt="Home" />
+            </a>
           </div>
         </div>
       </div>
@@ -85,13 +83,13 @@ const isActive = (href: string): boolean => {
             <div class="region region-primary-menu">
               {/* Language switcher (uncomment to re-enable)
               <div
-                class="language-switcher-language-url block block-languages-dropdown block-lang-drop-bootstraplanguage-interface"
+                class="language-switcher-language-url block block-languages-dropdown"
                 id="block-vani-languageswitcherbootstrap"
               >
                 <div class="block-content">
                   <div class="btn-group">
                     <button
-                      class="btn btn-default btn- dropdown-toggle"
+                      class="btn btn-default dropdown-toggle"
                       type="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
@@ -116,11 +114,7 @@ const isActive = (href: string): boolean => {
               </div>
               */}
 
-              <nav
-                role="navigation"
-                id="block-vani-main-menu"
-                class="block block-menu navigation menu--main"
-              >
+              <nav role="navigation">
                 <ul class="main-menu">
                   {
                     menuItems.map((item) => {
@@ -170,9 +164,9 @@ const isActive = (href: string): boolean => {
             <div class="search-box-close"></div>
             <div class="search-box-content">
               <div class="region region-search-box">
-                <div class="views-exposed-form block block-views block-views-exposed-filter-blocksite-search-page-1" id="block-vani-exposedformsite-searchpage-1">
+                <div class="block">
                   <h2 class="block-title">{lang === 'el' ? 'Αναζήτηση' : 'Search'}</h2>
-                  <form action={searchAction} method="get" id="views-exposed-form-site-search-page-1" accept-charset="UTF-8">
+                  <form action={searchAction} method="get" class="views-exposed-form" accept-charset="UTF-8">
                     <div class="form-item">
                       <input
                         placeholder={lang === 'el' ? 'Αναζήτηση...' : 'Enter your keywords'}
@@ -230,26 +224,19 @@ const isActive = (href: string): boolean => {
     ) : (
       <div id="page-header">
         <div class="container">
-          <div class="region region-page-header">
-            <div id="block-vani-page-title" class="block block-core block-page-title-block">
-              <h1 class="page-title">{pageTitle}</h1>
-            </div>
-            <div id="block-vani-breadcrumbs" class="block block-system block-system-breadcrumb-block">
-              <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
-                <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
-                <ol class="breadcrumb-items">
-                  <li class="breadcrumb-item">
-                    <a href={homeUrl}>{lang === 'el' ? 'Αρχική' : 'Home'}</a>
-                  </li>
-                  {pageTitle && (
-                    <li class="breadcrumb-item">
-                      <span>{pageTitle}</span>
-                    </li>
-                  )}
-                </ol>
-              </nav>
-            </div>
-          </div>
+          <h1 class="page-title">{pageTitle}</h1>
+          <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+            <ol class="breadcrumb-items">
+              <li class="breadcrumb-item">
+                <a href={homeUrl}>{lang === 'el' ? 'Αρχική' : 'Home'}</a>
+              </li>
+              {pageTitle && (
+                <li class="breadcrumb-item">
+                  <span>{pageTitle}</span>
+                </li>
+              )}
+            </ol>
+          </nav>
         </div>
       </div>
     )

@@ -46,13 +46,19 @@ export default function App() {
             '& .MuiTab-root': {
               fontWeight: 'bold',
               color: '#2a2a2a',
+              transition: 'background-color 0.2s ease, color 0.2s ease',
               '&:hover': {
-                color: '#fff !important',
+                color: 'tomato',
+                backgroundColor: 'rgba(255, 99, 71, 0.1)',
               },
             },
             '& .Mui-selected': {
               color: '#fff !important',
               backgroundColor: '#2a2a2a',
+              '&:hover': {
+                color: '#fff !important',
+                backgroundColor: '#2a2a2a',
+              },
             },
             '& .MuiTabs-indicator': {
               backgroundColor: 'tomato',

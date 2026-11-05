@@ -22,11 +22,11 @@ const bodyHtml = item.body ?? '';
 ---
 
 <BaseLayout title={item.title} lang={lang} nodeType="news">
-  <article class="node node--type-news node--view-mode-full">
+  <article class="node">
     <div class="node-content">
       {
-        item.news_image ? (
-          <div class="field field--name-field-news-image field--type-image field--label-hidden field__item">
+        item.news_image && (
+          <div class="field">
             <img
               src={item.news_image.url}
               width="220"
@@ -34,17 +34,12 @@ const bodyHtml = item.body ?? '';
               alt={item.news_image.alt || item.title}
             />
           </div>
-        ) : (
-          <div class="field field--name-field-news-image field--type-image field--label-hidden field__item" />
         )
       }
-      <div
-        class="field field--name-body field--type-text-with-summary field--label-hidden field__item"
-        set:html={bodyHtml}
-      />
+      <div class="field" set:html={bodyHtml} />
       {
         item.attached_files && item.attached_files.length > 0 && (
-          <div class="field field--name-field-attached-files field--type-file field--label-above">
+          <div class="field">
             <div class="field__label">{lang === 'el' ? 'Συνημμένα αρχεία' : 'Attached files'}</div>
             <div class="field__items">
               {item.attached_files.map((file) => (

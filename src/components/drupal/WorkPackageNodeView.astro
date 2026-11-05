@@ -28,22 +28,22 @@ const getPartnerLabel = (tid: number, fallback: string) => {
 ---
 
 <BaseLayout title={wp.title} lang={lang} nodeType="work_packages">
-  <article class="node node--type-work-packages node--view-mode-full">
+  <article class="node">
     <div class="node__content">
       {wp.number && (
-        <div class="field field--name-field-number field--label-above">
+        <div class="field">
           <div class="field__label">Number</div>
           <div class="field__item">{wp.number}</div>
         </div>
       )}
       {wp.activity_type && (
-        <div class="field field--name-field-activity-type field--label-above">
+        <div class="field">
           <div class="field__label">Activity type</div>
           <div class="field__item">{wp.activity_type}</div>
         </div>
       )}
       {wp.supervising_partner && wp.supervising_partner.length > 0 && (
-        <div class="field field--name-field-supervising-partner field--label-above">
+        <div class="field">
           <div class="field__label">Supervising Partner</div>
           <div class="field__items">
             {wp.supervising_partner.map((p) => (
@@ -53,7 +53,7 @@ const getPartnerLabel = (tid: number, fallback: string) => {
         </div>
       )}
       {wp.body && (
-        <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item" set:html={wp.body} />
+        <div class="field" set:html={wp.body} />
       )}
     </div>
   </article>

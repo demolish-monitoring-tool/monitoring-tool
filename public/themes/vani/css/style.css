@@ -1944,6 +1944,7 @@ ol.search-results {
 
 .footer-block {
   flex: 1 0 250px;
+  padding-top:1.25em;
 }
 
 #footer-bottom {

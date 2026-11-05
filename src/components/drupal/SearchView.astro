@@ -33,33 +33,31 @@ const searchAction = lang === 'el' ? '/el/search' : '/search';
 ---
 
 <BaseLayout title={pageTitle} lang={lang}>
-  <div class="views-element-container">
-    <div class="view view-site-search view-id-site_search view-display-id-page_1">
-      <div class="view-filters">
-        <form action={searchAction} method="get" class="views-exposed-form">
-          <div class="form-item">
-            <input
-              type="text"
-              name="search_api_fulltext"
-              id="site-search-input"
-              placeholder={lang === 'el' ? 'Αναζήτηση...' : 'Enter your keywords'}
-              size="30"
-              maxlength="128"
-              class="form-text"
-            />
-          </div>
-          <div class="form-actions">
-            <input
-              type="submit"
-              value={lang === 'el' ? 'Αναζήτηση' : 'Search'}
-              class="button form-submit"
-            />
-          </div>
-        </form>
-      </div>
-      <div class="view-header" id="site-search-summary" style="margin: 1rem 0; font-weight: 700;"></div>
-      <div class="view-content" id="site-search-results"></div>
+  <div class="view-site-search">
+    <div class="view-filters">
+      <form action={searchAction} method="get" class="views-exposed-form">
+        <div class="form-item">
+          <input
+            type="text"
+            name="search_api_fulltext"
+            id="site-search-input"
+            placeholder={lang === 'el' ? 'Αναζήτηση...' : 'Enter your keywords'}
+            size="30"
+            maxlength="128"
+            class="form-text"
+          />
+        </div>
+        <div class="form-actions">
+          <input
+            type="submit"
+            value={lang === 'el' ? 'Αναζήτηση' : 'Search'}
+            class="button form-submit"
+          />
+        </div>
+      </form>
     </div>
+    <div class="view-header" id="site-search-summary" style="margin: 1rem 0; font-weight: 700;"></div>
+    <div class="view-content" id="site-search-results"></div>
   </div>
 
   <script

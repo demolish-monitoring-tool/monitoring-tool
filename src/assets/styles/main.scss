@@ -281,9 +281,6 @@
   flex-direction: column;
 }
 
-.view-front-page-blocks .views-field-nothing,
-.view-front-page-blocks .views-field-nothing > .field-content,
-.view-front-page-blocks .item,
 .view-front-page-blocks .service {
   display: flex;
   flex-direction: column;
@@ -336,4 +333,10 @@ button.button-link:hover {
 
 #react-app svg {
   max-width: none;
+}
+
+#react-app .MuiTab-root:not(.Mui-selected):hover,
+#react-app .MuiTab-root:not(.Mui-selected):focus-visible {
+  color: var(--theme-color) !important;
+  background-color: rgba(255, 99, 71, 0.1);
 }

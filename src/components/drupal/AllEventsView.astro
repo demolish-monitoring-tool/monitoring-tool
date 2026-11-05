@@ -15,44 +15,34 @@ const pageTitle = lang === 'el' ? 'Εκδηλώσεις' : 'Events';
 ---
 
 <BaseLayout title={pageTitle} lang={lang}>
-  <div class="views-element-container">
-    <div class="view view-all-events view-id-all_events view-display-id-page_1">
-      <div class="view-content">
-        {
-          events.map((event) => (
-            <div class="views-row">
-              <div class="views-field views-field-nothing">
-                <span class="field-content">
-                  <div>
-                    <div class="d-flex">
-                      <div>
-                        <h4>
-                          <a href={localizeUrl(event.path_alias || `/all-events/${event.slug}`, lang)}>
-                            {event.title}
-                          </a>
-                        </h4>
-                        {event.event_date?.value && <p>{event.event_date.value}</p>}
-                        {event.location && (
-                          <div class="d-flex">
-                            <img
-                              src="/files/bootstrap-icons-1.11.2/pin-map-fill.svg"
-                              width="20"
-                              height="20"
-                              alt="location"
-                            />
-                            <p>{event.location}</p>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                    <div set:html={event.body} />
-                  </div>
-                </span>
-              </div>
+  <div class="view-all-events">
+    <div class="view-content">
+      {
+        events.map((event) => (
+          <div class="views-row">
+            <div>
+              <h4>
+                <a href={localizeUrl(event.path_alias || `/all-events/${event.slug}`, lang)}>
+                  {event.title}
+                </a>
+              </h4>
+              {event.event_date?.value && <p>{event.event_date.value}</p>}
+              {event.location && (
+                <div class="d-flex">
+                  <img
+                    src="/files/bootstrap-icons-1.11.2/pin-map-fill.svg"
+                    width="20"
+                    height="20"
+                    alt="location"
+                  />
+                  <p>{event.location}</p>
+                </div>
+              )}
             </div>
-          ))
-        }
-      </div>
+            <div set:html={event.body} />
+          </div>
+        ))
+      }
     </div>
   </div>
 </BaseLayout>

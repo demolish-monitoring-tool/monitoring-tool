@@ -34,7 +34,7 @@ const iconCards = [...(blocksWithIconData[lang] ?? blocksWithIconData.en)].sort(
   <div class="highlighted" slot="highlighted">
     <div class="container">
       <div class="region region-highlighted">
-        <div id="block-vani-logos-2" class="block block-block-content">
+        <div class="block">
           <div class="block-content" set:html={logosBlock?.body ?? ''} />
         </div>
       </div>
@@ -43,43 +43,37 @@ const iconCards = [...(blocksWithIconData[lang] ?? blocksWithIconData.en)].sort(
 
   <div class="homepage-content" slot="content_home">
     <div class="region region-content-home">
-      <div class="views-element-container block block-views block-views-blockfront-page-blocks-block-1" id="block-vani-views-block-front-page-blocks-block-1">
+      <div class="block">
         <div class="container">
           <div class="block-content">
-            <div class="home-block view view-front-page-blocks view-id-front_page_blocks view-display-id-block_1">
+            <div class="home-block view-front-page-blocks">
               <div class="view-content">
                 {
                   iconCards.map((card) => (
                     <div class="views-row">
-                      <div class="views-field views-field-nothing">
-                        <span class="field-content">
-                          <div class="item">
-                            <div class="service">
-                              <div>
-                                {card.svg_icon && (
-                                  <img
-                                    src={card.svg_icon.url}
-                                    width="50"
-                                    height="50"
-                                    alt={card.title}
-                                  />
-                                )}
-                              </div>
-                              <h3>{card.title}</h3>
-                              <div set:html={card.body} />
-                              {card.block_item_redirect_to && (
-                                <a
-                                  class="button-link"
-                                  href={localizeUrl(card.block_item_redirect_to.url, lang)}
-                                >
-                                  {lang === 'el' && card.block_item_redirect_to.title === 'Read more'
-                                    ? 'Περισσότερα'
-                                    : card.block_item_redirect_to.title || 'Read more'}
-                                </a>
-                              )}
-                            </div>
-                          </div>
-                        </span>
+                      <div class="service">
+                        <div>
+                          {card.svg_icon && (
+                            <img
+                              src={card.svg_icon.url}
+                              width="50"
+                              height="50"
+                              alt={card.title}
+                            />
+                          )}
+                        </div>
+                        <h3>{card.title}</h3>
+                        <div set:html={card.body} />
+                        {card.block_item_redirect_to && (
+                          <a
+                            class="button-link"
+                            href={localizeUrl(card.block_item_redirect_to.url, lang)}
+                          >
+                            {lang === 'el' && card.block_item_redirect_to.title === 'Read more'
+                              ? 'Περισσότερα'
+                              : card.block_item_redirect_to.title || 'Read more'}
+                          </a>
+                        )}
                       </div>
                     </div>
                   ))
@@ -90,7 +84,7 @@ const iconCards = [...(blocksWithIconData[lang] ?? blocksWithIconData.en)].sort(
         </div>
       </div>
 
-      <div id="block-vani-scientificandorsocialimpact-2" class="block block-block-content">
+      <div class="block">
         <div class="home-block-cicle1"></div>
         <div class="home-block-cicle2"></div>
         <div class="home-block-cicle3"></div>

@@ -30,31 +30,23 @@ const pageTitle = lang === 'el' ? 'Νέα & Εκδηλώσεις' : 'All news';
 ---
 
 <BaseLayout title={pageTitle} lang={lang}>
-  <div class="views-element-container">
-    <div class="view view-all-news view-id-all_news view-display-id-page_1">
-      <div class="view-content">
-        {
-          newsItems.map((item) => (
-            <div class="views-row">
-              <div class="views-field views-field-title">
-                <h3 class="field-content">
-                  <a href={localizeUrl(item.path_alias || `/all-news/${item.slug}`, lang)}>
-                    {item.title}
-                  </a>
-                </h3>
-              </div>
-              <div class="views-field views-field-created">
-                <span class="field-content">
-                  <time datetime={item.created}>{formatDrupalMediumDate(item.created)}</time>
-                </span>
-              </div>
-              <div class="views-field views-field-body">
-                <div class="field-content" set:html={item.body} />
-              </div>
+  <div class="view-all-news">
+    <div class="view-content">
+      {
+        newsItems.map((item) => (
+          <div class="views-row">
+            <h3>
+              <a href={localizeUrl(item.path_alias || `/all-news/${item.slug}`, lang)}>
+                {item.title}
+              </a>
+            </h3>
+            <div class="views-field-created">
+              <time datetime={item.created}>{formatDrupalMediumDate(item.created)}</time>
             </div>
-          ))
-        }
-      </div>
+            <div set:html={item.body} />
+          </div>
+        ))
+      }
     </div>
   </div>
 </BaseLayout>

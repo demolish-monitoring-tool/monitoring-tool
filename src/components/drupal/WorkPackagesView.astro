@@ -27,42 +27,38 @@ const pageTitle = lang === 'el' ? 'Πακέτα Εργασίας' : 'Work Packag
 ---
 
 <BaseLayout title={pageTitle} lang={lang}>
-  <div class="views-element-container">
-    <div class="view view-work-packages view-id-work_packages view-display-id-page_1">
-      <div class="view-content">
-        <table class="views-table views-view-table cols-4">
-          <thead>
-            <tr>
-              <th class="views-field views-field-field-number" scope="col">Number</th>
-              <th class="views-field views-field-title" scope="col"></th>
-              <th class="views-field views-field-field-activity-type" scope="col">Activity type</th>
-              <th class="views-field views-field-field-supervising-partner" scope="col">
-                Supervising Partner
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              workPackages.map((wp) => (
-                <tr>
-                  <td class="views-field views-field-field-number">{wp.number}</td>
-                  <td class="views-field views-field-title">
-                    <a href={localizeUrl(wp.path_alias || `/project/${wp.slug}`, lang)}>
-                      {wp.title}
-                    </a>
-                  </td>
-                  <td class="views-field views-field-field-activity-type">{wp.activity_type}</td>
-                  <td class="views-field views-field-field-supervising-partner">
-                    {(wp.supervising_partner ?? [])
-                      .map((p) => getPartnerLabel(p.target_id, p.label))
-                      .join(', ')}
-                  </td>
-                </tr>
-              ))
-            }
-          </tbody>
-        </table>
-      </div>
+  <div class="view-work-packages">
+    <div class="view-content">
+      <table class="views-table">
+        <thead>
+          <tr>
+            <th scope="col">Number</th>
+            <th scope="col"></th>
+            <th scope="col">Activity type</th>
+            <th scope="col">Supervising Partner</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            workPackages.map((wp) => (
+              <tr>
+                <td>{wp.number}</td>
+                <td>
+                  <a href={localizeUrl(wp.path_alias || `/project/${wp.slug}`, lang)}>
+                    {wp.title}
+                  </a>
+                </td>
+                <td>{wp.activity_type}</td>
+                <td>
+                  {(wp.supervising_partner ?? [])
+                    .map((p) => getPartnerLabel(p.target_id, p.label))
+                    .join(', ')}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
     </div>
   </div>
 </BaseLayout>
