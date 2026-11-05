@@ -1,0 +1,27 @@
+---
+import NewsNodeView from '../../components/drupal/NewsNodeView.astro';
+import newsData from '../../data/nodes/news.json';
+
+export function getStaticPaths() {
+  const paths = new Map<string, number>();
+  for (const item of newsData.en ?? []) {
+    if (item.slug) paths.set(item.slug, item.nid);
+    if (item.path_alias?.startsWith('/all-news/')) {
+      paths.set(item.path_alias.replace(/^\/all-news\//, ''), item.nid);
+    }
+  }
+  return Array.from(paths.entries()).map(([slug, nid]) => ({
+    params: { slug },
+    props: { nid },
+  }));
+}
+
+interface Props {
+  nid: number;
+}
+
+const { nid } = Astro.props;
+---
+
+<NewsNodeView nid={nid} lang="en" />
+

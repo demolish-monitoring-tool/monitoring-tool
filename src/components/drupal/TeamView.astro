@@ -1,0 +1,209 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import teamData from '../../data/nodes/team_member.json';
+import taxonomiesData from '../../data/taxonomies.json';
+import { type LangCode } from '../../data/site';
+
+interface Props {
+  filter: 'all' | 'panteion' | 'athena' | 'other';
+  lang: LangCode;
+}
+
+const { filter, lang } = Astro.props;
+
+const teamMap = teamData as Record<string, typeof teamData.en>;
+const allMembers = (
+  (teamMap[lang] && teamMap[lang].length > 0 ? teamMap[lang] : teamData.en) ?? []
+).filter((m) => m.status);
+
+const termsByLang = taxonomiesData.by_language[lang] ?? taxonomiesData.by_language.en ?? [];
+const getOrgLabel = (tid?: number, fallback?: string) => {
+  if (!tid) return fallback ?? '';
+  const term = termsByLang.find((t) => t.tid === tid);
+  return term?.name ?? fallback ?? '';
+};
+
+type Member = (typeof allMembers)[number];
+
+let piAttachment: Member[] = [];
+let mainMembers: Member[] = [];
+let pageTitle = lang === 'el' ? 'Η ομάδα' : 'The team';
+
+if (filter === 'panteion') {
+  pageTitle = lang === 'el' ? 'Πάντειον Πανεπιστήμιο' : 'Panteion University';
+  piAttachment = allMembers
+    .filter((m) => m.team_organization?.target_id === 1 && m.pi)
+    .sort((a, b) => a.title.localeCompare(b.title));
+  mainMembers = allMembers
+    .filter((m) => m.team_organization?.target_id === 1 && !m.pi)
+    .sort((a, b) => a.title.localeCompare(b.title));
+} else if (filter === 'athena') {
+  pageTitle = lang === 'el' ? 'Ερευνητικό κέντρο "Αθηνά"' : 'Athena RC';
+  piAttachment = allMembers
+    .filter((m) => m.team_organization?.target_id === 2 && m.pi)
+    .sort((a, b) => a.title.localeCompare(b.title));
+  mainMembers = allMembers
+    .filter((m) => m.team_organization?.target_id === 2 && !m.pi)
+    .sort((a, b) => b.title.localeCompare(a.title));
+} else if (filter === 'other') {
+  pageTitle = lang === 'el' ? 'Άλλοι φορείς' : 'Other';
+  piAttachment = [];
+  mainMembers = allMembers
+    .filter((m) => [4, 5, 6].includes(m.team_organization?.target_id ?? -1))
+    .sort((a, b) => b.title.localeCompare(a.title));
+} else {
+  pageTitle = lang === 'el' ? 'Η ομάδα' : 'The team';
+  piAttachment = allMembers.filter((m) => m.pi).sort((a, b) => a.title.localeCompare(b.title));
+  mainMembers = allMembers.filter((m) => !m.pi).sort((a, b) => a.title.localeCompare(b.title));
+}
+
+const defaultAvatar = '/files/2023-12/vecteezy_simple-user-default-icon_24983914.png';
+---
+
+<BaseLayout title={pageTitle} lang={lang}>
+  <div class="views-element-container">
+    <div class="view view-the-team view-id-the_team">
+      {
+        piAttachment.length > 0 && (
+          <div class="attachment attachment-before">
+            <div class="views-element-container">
+              <div class="view view-the-team view-id-the_team">
+                <div class="view-content">
+                  {piAttachment.map((member) => {
+                    const photoUrl = member.profile_photo?.url || defaultAvatar;
+                    const prodFallback = `https://demolish.gr/sites/default${photoUrl}`;
+                    const orgLabel = getOrgLabel(
+                      member.team_organization?.target_id,
+                      member.team_organization?.label,
+                    );
+                    return (
+                      <div class="team-row views-row">
+                        <div class="views-field views-field-nothing">
+                          <span class="field-content">
+                            <div class="flips">
+                              <div class="flip">
+                                <div class="flip__content">
+                                  <div class="flip__side flip__side--front">
+                                    <div class="flip__description">
+                                      <div class="d-flex">
+                                        <img
+                                          src={photoUrl}
+                                          alt={member.profile_photo?.alt || member.title}
+                                          onerror={`if(!this.dataset.triedProd){this.dataset.triedProd='1';this.src='${prodFallback}';}else{this.onerror=null;this.src='${defaultAvatar}';}`}
+                                        />
+                                        <div>
+                                          <h4>{member.title}</h4>
+                                          <p>{orgLabel}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="flip__side flip__side--back flip__side--back-1">
+                                    <div class="flip__description">
+                                      <div>
+                                        <h4>Brief Role in the Project</h4>
+                                        <div set:html={member.body} />
+                                        {member.personal_url?.url && (
+                                          <div class="d-flex">
+                                            <img
+                                              src="/files/bootstrap-icons-1.11.2/link.svg"
+                                              width="20"
+                                              height="20"
+                                              alt="link"
+                                            />
+                                            <a
+                                              href={member.personal_url.url}
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                            >
+                                              {member.personal_url.title || 'Personal web page'}
+                                            </a>
+                                          </div>
+                                        )}
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        )
+      }
+
+      <div class="view-content">
+        {
+          mainMembers.map((member) => {
+            const photoUrl = member.profile_photo?.url || defaultAvatar;
+            const prodFallback = `https://demolish.gr/sites/default${photoUrl}`;
+            const orgLabel = getOrgLabel(
+              member.team_organization?.target_id,
+              member.team_organization?.label,
+            );
+            return (
+              <div class="team-row views-row">
+                <div class="views-field views-field-nothing">
+                  <span class="field-content">
+                    <div class="flips">
+                      <div class="flip">
+                        <div class="flip__content">
+                          <div class="flip__side flip__side--front">
+                            <div class="flip__description">
+                              <div class="d-flex">
+                                <img
+                                  src={photoUrl}
+                                  alt={member.profile_photo?.alt || member.title}
+                                  onerror={`if(!this.dataset.triedProd){this.dataset.triedProd='1';this.src='${prodFallback}';}else{this.onerror=null;this.src='${defaultAvatar}';}`}
+                                />
+                                <div>
+                                  <h4>{member.title}</h4>
+                                  <p>{orgLabel}</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="flip__side flip__side--back flip__side--back-1">
+                            <div class="flip__description">
+                              <div>
+                                <h4>Brief Role in the Project</h4>
+                                <div set:html={member.body} />
+                                {member.personal_url?.url && (
+                                  <div class="d-flex">
+                                    <img
+                                      src="/files/bootstrap-icons-1.11.2/link.svg"
+                                      width="20"
+                                      height="20"
+                                      alt="link"
+                                    />
+                                    <a
+                                      href={member.personal_url.url}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      {member.personal_url.title || 'Personal web page'}
+                                    </a>
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

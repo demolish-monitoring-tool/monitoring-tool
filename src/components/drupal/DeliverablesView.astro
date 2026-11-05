@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import deliverablesData from '../../data/nodes/deliverables.json';
+import { type LangCode } from '../../data/site';
+
+interface Props {
+  lang: LangCode;
+}
+
+const { lang } = Astro.props;
+
+const delivMap = deliverablesData as Record<string, typeof deliverablesData.en>;
+const rawNodes =
+  (delivMap[lang] && delivMap[lang].length > 0 ? delivMap[lang] : deliverablesData.en) ?? [];
+
+const deliverables = [...rawNodes]
+  .filter((d) => d.status)
+  .sort((a, b) => new Date(a.created).getTime() - new Date(b.created).getTime());
+
+const pageTitle = lang === 'el' ? 'Παραδοτέα' : 'Deliverables';
+---
+
+<BaseLayout title={pageTitle} lang={lang}>
+  <div class="views-element-container">
+    <div class="view view-deleverables-list view-id-deleverables_list view-display-id-page_1">
+      <div class="view-content">
+        <table class="views-table views-view-table cols-3">
+          <thead>
+            <tr>
+              <th class="views-field views-field-title" scope="col">Deliverable Number</th>
+              <th class="views-field views-field-body" scope="col">Deliverable Name</th>
+              <th class="views-field views-field-field-deliverable-file" scope="col">File(s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              deliverables.map((item) => (
+                <tr>
+                  <td class="views-field views-field-title">{item.title}</td>
+                  <td class="views-field views-field-body" set:html={item.body} />
+                  <td class="views-field views-field-field-deliverable-file">
+                    {(() => {
+                      const file = item.deliverable_file as { url: string; filename: string } | null;
+                      return (
+                        file && (
+                          <span class="file">
+                            <a href={file.url} target="_blank" rel="noopener noreferrer">
+                              {file.filename}
+                            </a>
+                          </span>
+                        )
+                      );
+                    })()}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

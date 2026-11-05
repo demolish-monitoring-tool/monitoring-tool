@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import allNodesData from '../../data/nodes/all_nodes.json';
+import { localizeUrl, type LangCode } from '../../data/site';
+
+interface Props {
+  lang: LangCode;
+}
+
+const { lang } = Astro.props;
+
+const rawNodes = allNodesData.filter((n) => n.langcode === lang);
+const fallbackNodes = rawNodes.length > 0 ? rawNodes : allNodesData.filter((n) => n.langcode === 'en');
+
+const stripHtml = (html: string | null | undefined) =>
+  (html ?? '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+const searchableItems = fallbackNodes
+  .filter((n) => n.status && n.path_alias)
+  .map((n) => ({
+    title: n.title,
+    url: localizeUrl(n.path_alias!, lang),
+    type: n.type,
+    created: n.created,
+    text: stripHtml(n.body),
+  }));
+
+const pageTitle = lang === 'el' ? 'Αναζήτηση' : 'Search';
+const searchAction = lang === 'el' ? '/el/search' : '/search';
+---
+
+<BaseLayout title={pageTitle} lang={lang}>
+  <div class="views-element-container">
+    <div class="view view-site-search view-id-site_search view-display-id-page_1">
+      <div class="view-filters">
+        <form action={searchAction} method="get" class="views-exposed-form">
+          <div class="form-item">
+            <input
+              type="text"
+              name="search_api_fulltext"
+              id="site-search-input"
+              placeholder={lang === 'el' ? 'Αναζήτηση...' : 'Enter your keywords'}
+              size="30"
+              maxlength="128"
+              class="form-text"
+            />
+          </div>
+          <div class="form-actions">
+            <input
+              type="submit"
+              value={lang === 'el' ? 'Αναζήτηση' : 'Search'}
+              class="button form-submit"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="view-header" id="site-search-summary" style="margin: 1rem 0; font-weight: 700;"></div>
+      <div class="view-content" id="site-search-results"></div>
+    </div>
+  </div>
+
+  <script
+    is:inline
+    define:vars={{ searchableItems, lang }}
+  >
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var query = (params.get('search_api_fulltext') || '').trim();
+      var input = document.getElementById('site-search-input');
+      var summaryEl = document.getElementById('site-search-summary');
+      var resultsEl = document.getElementById('site-search-results');
+
+      if (input && query) {
+        input.value = query;
+      }
+
+      var qLower = query.toLowerCase();
+      var matches = !qLower
+        ? searchableItems
+        : searchableItems.filter(function (item) {
+            return (
+              item.title.toLowerCase().includes(qLower) ||
+              item.text.toLowerCase().includes(qLower)
+            );
+          });
+
+      if (summaryEl) {
+        var total = matches.length;
+        var start = total > 0 ? 1 : 0;
+        summaryEl.textContent =
+          lang === 'el'
+            ? 'Εμφάνιση ' + start + ' - ' + total + ' από ' + total
+            : 'Displaying ' + start + ' - ' + total + ' of ' + total;
+      }
+
+      if (resultsEl) {
+        if (matches.length === 0) {
+          resultsEl.innerHTML =
+            '<p>' +
+            (lang === 'el'
+              ? 'Δεν βρέθηκαν αποτελέσματα.'
+              : 'Your search yielded no results.') +
+            '</p>';
+        } else {
+          resultsEl.innerHTML = matches
+            .map(function (item) {
+              var excerpt =
+                item.text.length > 260 ? item.text.slice(0, 260) + '…' : item.text;
+              return (
+                '<div class="views-row" style="margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">' +
+                '<h3 style="margin-bottom: 0.4rem;"><a href="' +
+                item.url +
+                '">' +
+                item.title +
+                '</a></h3>' +
+                (excerpt ? '<p style="margin: 0;">' + excerpt + '</p>' : '') +
+                '</div>'
+              );
+            })
+            .join('');
+        }
+      }
+    })();
+  </script>
+</BaseLayout>

@@ -1,0 +1,57 @@
+---
+nid: 6
+uuid: "60979b55-d69f-4dfd-8b53-178920e769bb"
+type: "events"
+langcode: "en"
+title: "My next upcoming event"
+slug: "my-next-upcoming-event"
+status: false
+promote: false
+sticky: false
+created: "2023-11-22T17:41:39+00:00"
+changed: "2023-12-20T14:59:54+00:00"
+internal_path: "/node/6"
+path_alias: "/all-events/my-next-upcoming-event"
+summary: null
+body_format: "html"
+event_date:
+  value: "2023-12-22T07:00:00"
+  end_value: "2023-12-22T11:00:00"
+event_images:
+  - fid: 16
+    uuid: "aaa23e23-bda5-4062-acf9-33718beb9fa7"
+    filename: "fall-1072821_1920.jpg"
+    uri: "public://2023-11/fall-1072821_1920.jpg"
+    url: "/files/2023-11/fall-1072821_1920.jpg"
+    filemime: "image/jpeg"
+    filesize: 1261710
+    alt: "event image 2"
+    title: ""
+    width: 1920
+    height: 1280
+  - fid: 31
+    uuid: "9d97cf0d-a322-469f-a0d0-456b944e8994"
+    filename: "notebook-336634_1920.jpg"
+    uri: "public://2023-11/notebook-336634_1920.jpg"
+    url: "/files/2023-11/notebook-336634_1920.jpg"
+    filemime: "image/jpeg"
+    filesize: 622100
+    alt: "event image 3"
+    title: ""
+    width: 1920
+    height: 1288
+  - fid: 32
+    uuid: "4d9b1603-234b-40be-aefa-c5fb2d2d3356"
+    filename: "office1.jpg"
+    uri: "public://2023-11/office1.jpg"
+    url: "/files/2023-11/office1.jpg"
+    filemime: "image/jpeg"
+    filesize: 178362
+    alt: "event image 3"
+    title: ""
+    width: 1024
+    height: 1024
+location: "Athena RC"
+---
+
+<p><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(64, 64, 64);display:inline !important;float:none;font-family:Lato, Helvetica, sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">The basic aim of this research effort is to examine the phenomenon of xenophobia in Greece through a large-scale multi-source study based on the use of advanced computational social science approaches. There is a common perception that xenophobia is a deep-rooted social phenomenon that reasonably escalates under circumstances of severe economic crisis.&nbsp;</span></p>

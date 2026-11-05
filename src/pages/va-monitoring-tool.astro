@@ -1,18 +1,10 @@
 ---
-// src/pages/tool.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
-import DemolishApp from '../components/demolish-app/App.jsx'; // Adjust path to your component
+import DemolishApp from '../components/demolish-app/App.jsx';
 ---
 
-<BaseLayout title="Demolish Monitoring Tool" description="Manage and monitor demolish tool.">
-  <section class="section">
-    <div class="container">
-      <h1 class="title has-text-white">Demolish Monitoring Tool</h1>
-      <p class="subtitle has-text-grey-light">Interactive application</p>
-
-      <!-- Mount your React app here with a client directive -->
-      <DemolishApp client:load />
-
-    </div>
-  </section>
+<BaseLayout title="Monitoring tool" lang="en" nodeType="basic_page">
+  <div id="react-app">
+    <DemolishApp client:load />
+  </div>
 </BaseLayout>

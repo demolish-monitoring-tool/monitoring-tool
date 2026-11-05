@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import newsData from '../../data/nodes/news.json';
+import { localizeUrl, type LangCode } from '../../data/site';
+
+interface Props {
+  lang: LangCode;
+}
+
+const { lang } = Astro.props;
+
+const rawNews = newsData[lang] ?? [];
+const newsItems = [...rawNews]
+  .filter((n) => n.status)
+  .sort((a, b) => new Date(b.created).getTime() - new Date(a.created).getTime());
+
+const formatDrupalMediumDate = (iso: string): string => {
+  const d = new Date(iso);
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const dayName = days[d.getUTCDay()];
+  const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const dd = String(d.getUTCDate()).padStart(2, '0');
+  const yyyy = d.getUTCFullYear();
+  const hh = String(d.getUTCHours()).padStart(2, '0');
+  const min = String(d.getUTCMinutes()).padStart(2, '0');
+  return `${dayName}, ${mm}/${dd}/${yyyy} - ${hh}:${min}`;
+};
+
+const pageTitle = lang === 'el' ? 'Νέα & Εκδηλώσεις' : 'All news';
+---
+
+<BaseLayout title={pageTitle} lang={lang}>
+  <div class="views-element-container">
+    <div class="view view-all-news view-id-all_news view-display-id-page_1">
+      <div class="view-content">
+        {
+          newsItems.map((item) => (
+            <div class="views-row">
+              <div class="views-field views-field-title">
+                <h3 class="field-content">
+                  <a href={localizeUrl(item.path_alias || `/all-news/${item.slug}`, lang)}>
+                    {item.title}
+                  </a>
+                </h3>
+              </div>
+              <div class="views-field views-field-created">
+                <span class="field-content">
+                  <time datetime={item.created}>{formatDrupalMediumDate(item.created)}</time>
+                </span>
+              </div>
+              <div class="views-field views-field-body">
+                <div
+                  class="field-content"
+                  set:html={(item.body ?? '').replace(
+                    /src="\/files\/([^"]+)"/g,
+                    'src="/files/$1" onerror="if(!this.dataset.triedProd){this.dataset.triedProd=\'1\';this.src=\'https://demolish.gr/sites/default/files/$1\';}"',
+                  )}
+                />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

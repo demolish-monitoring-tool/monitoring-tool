@@ -1,0 +1,130 @@
+{
+    "en": [
+        {
+            "nid": 23,
+            "uuid": "5b59db87-e0ba-4af0-87cf-3badfc6af107",
+            "type": "work_packages",
+            "langcode": "en",
+            "title": "Project Management",
+            "slug": "wp1",
+            "status": true,
+            "promote": false,
+            "sticky": false,
+            "created": "2023-12-14T09:20:53+00:00",
+            "changed": "2024-03-13T07:50:48+00:00",
+            "internal_path": "/node/23",
+            "path_alias": "/project/wp1",
+            "summary": null,
+            "body_format": null,
+            "activity_type": "Διαχείριση & Διασφάλιση Ποιότητας",
+            "number": "WP1",
+            "supervising_partner": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "52d2007c-56b6-4a86-8157-3c7e20beedc2",
+                    "label": "Panteion University"
+                }
+            ],
+            "body": "",
+            "body_raw": null,
+            "markdown_file": "src/content/work_packages/en/23-wp1.md"
+        },
+        {
+            "nid": 24,
+            "uuid": "9c617459-3ea7-4276-969e-22a795202819",
+            "type": "work_packages",
+            "langcode": "en",
+            "title": "Theoretical Account and Existing Research of Xenophobia as a sentiment and behavioural approach",
+            "slug": "wp2",
+            "status": true,
+            "promote": false,
+            "sticky": false,
+            "created": "2023-12-14T09:22:31+00:00",
+            "changed": "2023-12-14T09:23:13+00:00",
+            "internal_path": "/node/24",
+            "path_alias": "/project/wp2",
+            "summary": null,
+            "body_format": null,
+            "activity_type": "Basic Research",
+            "number": "WP2",
+            "supervising_partner": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "52d2007c-56b6-4a86-8157-3c7e20beedc2",
+                    "label": "Panteion University"
+                }
+            ],
+            "body": "",
+            "body_raw": null,
+            "markdown_file": "src/content/work_packages/en/24-wp2.md"
+        },
+        {
+            "nid": 25,
+            "uuid": "28aa19c3-abc7-47ef-b467-bfb74e544660",
+            "type": "work_packages",
+            "langcode": "en",
+            "title": "Data Collection and Analysis",
+            "slug": "wp3",
+            "status": true,
+            "promote": false,
+            "sticky": false,
+            "created": "2023-12-14T09:23:31+00:00",
+            "changed": "2023-12-14T09:24:03+00:00",
+            "internal_path": "/node/25",
+            "path_alias": "/project/wp3",
+            "summary": null,
+            "body_format": null,
+            "activity_type": "Basic Research",
+            "number": "WP3",
+            "supervising_partner": [
+                {
+                    "target_id": 2,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "c46e0801-2138-467f-930b-869aed088860",
+                    "label": "Athena RC"
+                }
+            ],
+            "body": "",
+            "body_raw": null,
+            "markdown_file": "src/content/work_packages/en/25-wp3.md"
+        },
+        {
+            "nid": 26,
+            "uuid": "d1176bdb-68bd-41e6-996c-06a2d09c8a13",
+            "type": "work_packages",
+            "langcode": "en",
+            "title": "Dissemination and Sustainability",
+            "slug": "wp4",
+            "status": true,
+            "promote": false,
+            "sticky": false,
+            "created": "2023-12-14T09:24:06+00:00",
+            "changed": "2023-12-14T09:24:47+00:00",
+            "internal_path": "/node/26",
+            "path_alias": "/project/wp4",
+            "summary": null,
+            "body_format": null,
+            "activity_type": "Impact, Dissemination & Sustainability Strategy",
+            "number": "WP4",
+            "supervising_partner": [
+                {
+                    "target_id": 1,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "52d2007c-56b6-4a86-8157-3c7e20beedc2",
+                    "label": "Panteion University"
+                },
+                {
+                    "target_id": 2,
+                    "target_type": "taxonomy_term",
+                    "target_uuid": "c46e0801-2138-467f-930b-869aed088860",
+                    "label": "Athena RC"
+                }
+            ],
+            "body": "",
+            "body_raw": null,
+            "markdown_file": "src/content/work_packages/en/26-wp4.md"
+        }
+    ]
+}

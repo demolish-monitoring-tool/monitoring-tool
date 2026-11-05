@@ -1,0 +1,233 @@
+[
+    {
+        "id": 1,
+        "path": "/node/6",
+        "alias": "/all-events/my-next-upcoming-event",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 2,
+        "path": "/node/9",
+        "alias": "/all-news/great-news",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 3,
+        "path": "/node/10",
+        "alias": "/all-news/news-without-image",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 4,
+        "path": "/node/9",
+        "alias": "/all-news/great-news-ellinika",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 5,
+        "path": "/node/11",
+        "alias": "/methodology",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 6,
+        "path": "/node/12",
+        "alias": "/methodology/va-analysis",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 7,
+        "path": "/node/13",
+        "alias": "/methodology/event-analysis",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 8,
+        "path": "/node/14",
+        "alias": "/methodology/linking-hate-speech-and-hate-crime",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 9,
+        "path": "/node/15",
+        "alias": "/methodology/ethics",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 10,
+        "path": "/node/23",
+        "alias": "/project/wp1",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 11,
+        "path": "/node/24",
+        "alias": "/project/wp2",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 12,
+        "path": "/node/25",
+        "alias": "/project/wp3",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 13,
+        "path": "/node/26",
+        "alias": "/project/wp4",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 14,
+        "path": "/node/27",
+        "alias": "/project/demolish-in-brief",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 15,
+        "path": "/node/28",
+        "alias": "/project/results",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 16,
+        "path": "/node/12",
+        "alias": "/methodology/va-analysis",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 17,
+        "path": "/node/27",
+        "alias": "/project/demolish-in-brief",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 18,
+        "path": "/node/13",
+        "alias": "/methodology/event-analysis",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 19,
+        "path": "/node/14",
+        "alias": "/methodology/linking-hate-speech-and-hate-crime",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 20,
+        "path": "/node/15",
+        "alias": "/methodology/ethics",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 21,
+        "path": "/node/28",
+        "alias": "/project/results",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 23,
+        "path": "/node/41",
+        "alias": "/privacy-policy",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 24,
+        "path": "/node/42",
+        "alias": "/all-news/workshop-far-right-extremism-and-democracy-comparative-perspective-europe-and-latin",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 25,
+        "path": "/node/42",
+        "alias": "/all-news/workshop-akrodexios-extremismos-kai-dimokratia-se-sygkritiki-prooptiki-eyropi-kai-latiniki",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 26,
+        "path": "/node/43",
+        "alias": "/all-news/demolish-project-metapolitefsi50-conference",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 27,
+        "path": "/node/43",
+        "alias": "/all-news/programma-demolish-sto-synedrio-metapolitefsi50",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 28,
+        "path": "/node/44",
+        "alias": "/all-news/maria-pontiki-presented-demolish-project-ert-echo",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 29,
+        "path": "/node/44",
+        "alias": "/all-news/i-maria-pontiki-paroysiasi-ergo-demolish-sto-ert-echo",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 30,
+        "path": "/node/1",
+        "alias": "/va-monitoring-tool",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 31,
+        "path": "/node/45",
+        "alias": "/all-news/kataliktiria-imerida-ergoy",
+        "langcode": "el",
+        "status": true
+    },
+    {
+        "id": 32,
+        "path": "/node/45",
+        "alias": "/all-news/demolish-project-final-event",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 33,
+        "path": "/node/46",
+        "alias": "/all-news/demolish-project-ecpr-general-conference-2025",
+        "langcode": "en",
+        "status": true
+    },
+    {
+        "id": 34,
+        "path": "/node/47",
+        "alias": "/publications",
+        "langcode": "en",
+        "status": true
+    }
+]

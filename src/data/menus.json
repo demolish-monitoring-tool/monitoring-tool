@@ -1,0 +1,1390 @@
+{
+    "trees": {
+        "en": {
+            "main": [
+                {
+                    "id": 1,
+                    "uuid": "346c0b5f-8cff-4ca5-98c3-285515cf9bd0",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -50,
+                    "expanded": false,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": false,
+                    "title": "Home",
+                    "description": null,
+                    "uri": "internal:/",
+                    "url": "/",
+                    "children": []
+                },
+                {
+                    "id": 2,
+                    "uuid": "140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -49,
+                    "expanded": true,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": false,
+                    "title": "The Project",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#",
+                    "children": [
+                        {
+                            "id": 9,
+                            "uuid": "2b004f90-b30c-4ec9-989d-77203b04d82f",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+                            "weight": -50,
+                            "expanded": true,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "DeΜoLiSH in brief",
+                            "description": null,
+                            "uri": "internal:/project/demolish-in-brief",
+                            "url": "/project/demolish-in-brief",
+                            "children": [
+                                {
+                                    "id": 10,
+                                    "uuid": "4b3e2eaa-f7cf-4833-bbcb-09ec88f82b97",
+                                    "menu_name": "main",
+                                    "parent": "menu_link_content:2b004f90-b30c-4ec9-989d-77203b04d82f",
+                                    "weight": -49,
+                                    "expanded": false,
+                                    "enabled": false,
+                                    "langcode": "en",
+                                    "is_fallback_translation": false,
+                                    "title": "Objectives",
+                                    "description": null,
+                                    "uri": "internal:#",
+                                    "url": "#",
+                                    "children": []
+                                },
+                                {
+                                    "id": 11,
+                                    "uuid": "67b716d5-b407-4323-905a-bc428b146598",
+                                    "menu_name": "main",
+                                    "parent": "menu_link_content:2b004f90-b30c-4ec9-989d-77203b04d82f",
+                                    "weight": -48,
+                                    "expanded": false,
+                                    "enabled": false,
+                                    "langcode": "en",
+                                    "is_fallback_translation": false,
+                                    "title": "Innovation",
+                                    "description": null,
+                                    "uri": "internal:#",
+                                    "url": "#",
+                                    "children": []
+                                },
+                                {
+                                    "id": 12,
+                                    "uuid": "89186b8f-57f3-44ad-abc0-50d3e799798e",
+                                    "menu_name": "main",
+                                    "parent": "menu_link_content:2b004f90-b30c-4ec9-989d-77203b04d82f",
+                                    "weight": -47,
+                                    "expanded": false,
+                                    "enabled": false,
+                                    "langcode": "en",
+                                    "is_fallback_translation": false,
+                                    "title": "Contribution",
+                                    "description": null,
+                                    "uri": "internal:#",
+                                    "url": "#",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 13,
+                            "uuid": "63a305a5-3c61-4883-b971-87cf168b5dbf",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+                            "weight": -49,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Work-packages",
+                            "description": null,
+                            "uri": "internal:/project/work-packages",
+                            "url": "/project/work-packages",
+                            "children": []
+                        },
+                        {
+                            "id": 14,
+                            "uuid": "af8aae17-4b58-450e-b4d3-4f386118a067",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+                            "weight": -48,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Deliverables",
+                            "description": null,
+                            "uri": "internal:/project/deliverables",
+                            "url": "/project/deliverables",
+                            "children": []
+                        },
+                        {
+                            "id": 7,
+                            "uuid": "dc02e9c3-5cb3-4d8f-ba7d-8a57d8c91601",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+                            "weight": -47,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Publications",
+                            "description": null,
+                            "uri": "internal:/publications",
+                            "url": "/publications",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "uuid": "0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -48,
+                    "expanded": true,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": false,
+                    "title": "The team",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#",
+                    "children": [
+                        {
+                            "id": 23,
+                            "uuid": "2d9a3816-1bed-47cd-9e22-b5a020fff2e4",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+                            "weight": -50,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Panteion University",
+                            "description": null,
+                            "uri": "internal:/the-team/panteion",
+                            "url": "/the-team/panteion",
+                            "children": []
+                        },
+                        {
+                            "id": 24,
+                            "uuid": "56ed3d96-fc88-4f78-b2a8-4aa41f65a278",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+                            "weight": -49,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Athena RC",
+                            "description": null,
+                            "uri": "internal:/the-team/athena",
+                            "url": "/the-team/athena",
+                            "children": []
+                        },
+                        {
+                            "id": 25,
+                            "uuid": "a51a8b59-76ad-46a1-8678-a428645ee08a",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+                            "weight": -48,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Other members",
+                            "description": null,
+                            "uri": "internal:/the-team/other",
+                            "url": "/the-team/other",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "uuid": "8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -47,
+                    "expanded": true,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": false,
+                    "title": "Methodology",
+                    "description": null,
+                    "uri": "internal:/methodology",
+                    "url": "/methodology",
+                    "children": [
+                        {
+                            "id": 16,
+                            "uuid": "365eaff2-9e31-41b2-99fc-8d35c9cc58ab",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+                            "weight": -50,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Verbal Aggression Analysis",
+                            "description": null,
+                            "uri": "internal:/methodology/va-analysis",
+                            "url": "/methodology/va-analysis",
+                            "children": []
+                        },
+                        {
+                            "id": 17,
+                            "uuid": "21b22bda-6872-4c3c-a7cf-f60381f8d3a0",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+                            "weight": -49,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Event Analysis",
+                            "description": null,
+                            "uri": "internal:/methodology/event-analysis",
+                            "url": "/methodology/event-analysis",
+                            "children": []
+                        },
+                        {
+                            "id": 18,
+                            "uuid": "c2517850-e049-44ac-86e8-8d60f879275a",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+                            "weight": -48,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Linking Hate Speech & Hate Crime",
+                            "description": null,
+                            "uri": "internal:/methodology/linking-hate-speech-and-hate-crime",
+                            "url": "/methodology/linking-hate-speech-and-hate-crime",
+                            "children": []
+                        },
+                        {
+                            "id": 19,
+                            "uuid": "c4a32e23-9a31-4c41-a057-c6e8efa2654d",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+                            "weight": -47,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Ethics",
+                            "description": null,
+                            "uri": "internal:#",
+                            "url": "#",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 15,
+                    "uuid": "e54c1cdc-d35d-4446-a93c-330f78ff4445",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -46,
+                    "expanded": false,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": false,
+                    "title": "Monitoring tool",
+                    "description": null,
+                    "uri": "internal:/va-monitoring-tool",
+                    "url": "/va-monitoring-tool",
+                    "children": []
+                },
+                {
+                    "id": 4,
+                    "uuid": "d658f91e-12e4-4ffb-8b20-0f090d73f348",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -45,
+                    "expanded": true,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": false,
+                    "title": "News&Events",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#",
+                    "children": [
+                        {
+                            "id": 5,
+                            "uuid": "2ca431a8-a3d5-4d62-84f0-f3cff7b8f3fa",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:d658f91e-12e4-4ffb-8b20-0f090d73f348",
+                            "weight": -50,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "News",
+                            "description": null,
+                            "uri": "internal:/all-news",
+                            "url": "/all-news",
+                            "children": []
+                        },
+                        {
+                            "id": 6,
+                            "uuid": "1607133a-eed0-42ba-88a8-9988cacf4fb4",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:d658f91e-12e4-4ffb-8b20-0f090d73f348",
+                            "weight": -49,
+                            "expanded": false,
+                            "enabled": false,
+                            "langcode": "en",
+                            "is_fallback_translation": false,
+                            "title": "Events",
+                            "description": null,
+                            "uri": "internal:/all-events",
+                            "url": "/all-events",
+                            "children": []
+                        }
+                    ]
+                }
+            ],
+            "team-side-menu": [
+                {
+                    "id": 20,
+                    "uuid": "ff038c23-d054-424a-971e-e9794388e4e3",
+                    "menu_name": "team-side-menu",
+                    "parent": null,
+                    "weight": -50,
+                    "expanded": false,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": false,
+                    "title": "Panteion University",
+                    "description": null,
+                    "uri": "internal:/the-team/panteion",
+                    "url": "/the-team/panteion",
+                    "children": []
+                },
+                {
+                    "id": 21,
+                    "uuid": "e7c844dc-3404-4045-836a-4418f8d0fb5f",
+                    "menu_name": "team-side-menu",
+                    "parent": null,
+                    "weight": -49,
+                    "expanded": false,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": false,
+                    "title": "Athena RC",
+                    "description": null,
+                    "uri": "internal:/the-team/athena",
+                    "url": "/the-team/athena",
+                    "children": []
+                },
+                {
+                    "id": 22,
+                    "uuid": "3b55de15-c10e-4438-af37-6a30e3248d31",
+                    "menu_name": "team-side-menu",
+                    "parent": null,
+                    "weight": -48,
+                    "expanded": false,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": false,
+                    "title": "Other Members",
+                    "description": null,
+                    "uri": "internal:/the-team/other",
+                    "url": "/the-team/other",
+                    "children": []
+                }
+            ]
+        },
+        "el": {
+            "main": [
+                {
+                    "id": 1,
+                    "uuid": "346c0b5f-8cff-4ca5-98c3-285515cf9bd0",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -50,
+                    "expanded": false,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": true,
+                    "title": "Home",
+                    "description": null,
+                    "uri": "internal:/",
+                    "url": "/",
+                    "children": []
+                },
+                {
+                    "id": 2,
+                    "uuid": "140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -49,
+                    "expanded": true,
+                    "enabled": true,
+                    "langcode": "el",
+                    "is_fallback_translation": false,
+                    "title": "Το έργο",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#",
+                    "children": [
+                        {
+                            "id": 9,
+                            "uuid": "2b004f90-b30c-4ec9-989d-77203b04d82f",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+                            "weight": -50,
+                            "expanded": true,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Το DeMoLiSH εν συντομία",
+                            "description": null,
+                            "uri": "internal:/project/demolish-in-brief",
+                            "url": "/project/demolish-in-brief",
+                            "children": [
+                                {
+                                    "id": 10,
+                                    "uuid": "4b3e2eaa-f7cf-4833-bbcb-09ec88f82b97",
+                                    "menu_name": "main",
+                                    "parent": "menu_link_content:2b004f90-b30c-4ec9-989d-77203b04d82f",
+                                    "weight": -49,
+                                    "expanded": false,
+                                    "enabled": false,
+                                    "langcode": "en",
+                                    "is_fallback_translation": true,
+                                    "title": "Objectives",
+                                    "description": null,
+                                    "uri": "internal:#",
+                                    "url": "#",
+                                    "children": []
+                                },
+                                {
+                                    "id": 11,
+                                    "uuid": "67b716d5-b407-4323-905a-bc428b146598",
+                                    "menu_name": "main",
+                                    "parent": "menu_link_content:2b004f90-b30c-4ec9-989d-77203b04d82f",
+                                    "weight": -48,
+                                    "expanded": false,
+                                    "enabled": false,
+                                    "langcode": "en",
+                                    "is_fallback_translation": true,
+                                    "title": "Innovation",
+                                    "description": null,
+                                    "uri": "internal:#",
+                                    "url": "#",
+                                    "children": []
+                                },
+                                {
+                                    "id": 12,
+                                    "uuid": "89186b8f-57f3-44ad-abc0-50d3e799798e",
+                                    "menu_name": "main",
+                                    "parent": "menu_link_content:2b004f90-b30c-4ec9-989d-77203b04d82f",
+                                    "weight": -47,
+                                    "expanded": false,
+                                    "enabled": false,
+                                    "langcode": "en",
+                                    "is_fallback_translation": true,
+                                    "title": "Contribution",
+                                    "description": null,
+                                    "uri": "internal:#",
+                                    "url": "#",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 13,
+                            "uuid": "63a305a5-3c61-4883-b971-87cf168b5dbf",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+                            "weight": -49,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Πακέτα εργασίας",
+                            "description": null,
+                            "uri": "internal:/project/work-packages",
+                            "url": "/project/work-packages",
+                            "children": []
+                        },
+                        {
+                            "id": 14,
+                            "uuid": "af8aae17-4b58-450e-b4d3-4f386118a067",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+                            "weight": -48,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Παραδοτέα",
+                            "description": null,
+                            "uri": "internal:/project/deliverables",
+                            "url": "/project/deliverables",
+                            "children": []
+                        },
+                        {
+                            "id": 7,
+                            "uuid": "dc02e9c3-5cb3-4d8f-ba7d-8a57d8c91601",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+                            "weight": -47,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Δημοσιεύσεις",
+                            "description": null,
+                            "uri": "internal:/publications",
+                            "url": "/publications",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "uuid": "0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -48,
+                    "expanded": true,
+                    "enabled": true,
+                    "langcode": "el",
+                    "is_fallback_translation": false,
+                    "title": "Ερευνητική ομάδα",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#",
+                    "children": [
+                        {
+                            "id": 23,
+                            "uuid": "2d9a3816-1bed-47cd-9e22-b5a020fff2e4",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+                            "weight": -50,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Πάντειον Πανεπιστήμιο",
+                            "description": null,
+                            "uri": "internal:/the-team/panteion",
+                            "url": "/the-team/panteion",
+                            "children": []
+                        },
+                        {
+                            "id": 24,
+                            "uuid": "56ed3d96-fc88-4f78-b2a8-4aa41f65a278",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+                            "weight": -49,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Αθηνά",
+                            "description": null,
+                            "uri": "internal:/the-team/athena",
+                            "url": "/the-team/athena",
+                            "children": []
+                        },
+                        {
+                            "id": 25,
+                            "uuid": "a51a8b59-76ad-46a1-8678-a428645ee08a",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+                            "weight": -48,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Άλλα μέλη",
+                            "description": null,
+                            "uri": "internal:/the-team/other",
+                            "url": "/the-team/other",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "uuid": "8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -47,
+                    "expanded": true,
+                    "enabled": true,
+                    "langcode": "el",
+                    "is_fallback_translation": false,
+                    "title": "Μεθοδολογία",
+                    "description": null,
+                    "uri": "internal:/methodology",
+                    "url": "/methodology",
+                    "children": [
+                        {
+                            "id": 16,
+                            "uuid": "365eaff2-9e31-41b2-99fc-8d35c9cc58ab",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+                            "weight": -50,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Ανάλυση λεκτικής επιθετικότητας",
+                            "description": null,
+                            "uri": "internal:/methodology/va-analysis",
+                            "url": "/methodology/va-analysis",
+                            "children": []
+                        },
+                        {
+                            "id": 17,
+                            "uuid": "21b22bda-6872-4c3c-a7cf-f60381f8d3a0",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+                            "weight": -49,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Ανάλυση γεγονότων",
+                            "description": null,
+                            "uri": "internal:/methodology/event-analysis",
+                            "url": "/methodology/event-analysis",
+                            "children": []
+                        },
+                        {
+                            "id": 18,
+                            "uuid": "c2517850-e049-44ac-86e8-8d60f879275a",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+                            "weight": -48,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Σύνδεση ρητορικής μίσους & εγκλημάτων μίσους",
+                            "description": null,
+                            "uri": "internal:/methodology/linking-hate-speech-and-hate-crime",
+                            "url": "/methodology/linking-hate-speech-and-hate-crime",
+                            "children": []
+                        },
+                        {
+                            "id": 19,
+                            "uuid": "c4a32e23-9a31-4c41-a057-c6e8efa2654d",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+                            "weight": -47,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "en",
+                            "is_fallback_translation": true,
+                            "title": "Ethics",
+                            "description": null,
+                            "uri": "internal:#",
+                            "url": "#",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 15,
+                    "uuid": "e54c1cdc-d35d-4446-a93c-330f78ff4445",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -46,
+                    "expanded": false,
+                    "enabled": true,
+                    "langcode": "el",
+                    "is_fallback_translation": false,
+                    "title": "Αποτελέσματα",
+                    "description": null,
+                    "uri": "internal:/va-monitoring-tool",
+                    "url": "/va-monitoring-tool",
+                    "children": []
+                },
+                {
+                    "id": 4,
+                    "uuid": "d658f91e-12e4-4ffb-8b20-0f090d73f348",
+                    "menu_name": "main",
+                    "parent": null,
+                    "weight": -45,
+                    "expanded": true,
+                    "enabled": true,
+                    "langcode": "el",
+                    "is_fallback_translation": false,
+                    "title": "Νέα&Εκδηλώσεις",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#",
+                    "children": [
+                        {
+                            "id": 5,
+                            "uuid": "2ca431a8-a3d5-4d62-84f0-f3cff7b8f3fa",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:d658f91e-12e4-4ffb-8b20-0f090d73f348",
+                            "weight": -50,
+                            "expanded": false,
+                            "enabled": true,
+                            "langcode": "el",
+                            "is_fallback_translation": false,
+                            "title": "Νέα",
+                            "description": null,
+                            "uri": "internal:/all-news",
+                            "url": "/all-news",
+                            "children": []
+                        },
+                        {
+                            "id": 6,
+                            "uuid": "1607133a-eed0-42ba-88a8-9988cacf4fb4",
+                            "menu_name": "main",
+                            "parent": "menu_link_content:d658f91e-12e4-4ffb-8b20-0f090d73f348",
+                            "weight": -49,
+                            "expanded": false,
+                            "enabled": false,
+                            "langcode": "en",
+                            "is_fallback_translation": true,
+                            "title": "Events",
+                            "description": null,
+                            "uri": "internal:/all-events",
+                            "url": "/all-events",
+                            "children": []
+                        }
+                    ]
+                }
+            ],
+            "team-side-menu": [
+                {
+                    "id": 20,
+                    "uuid": "ff038c23-d054-424a-971e-e9794388e4e3",
+                    "menu_name": "team-side-menu",
+                    "parent": null,
+                    "weight": -50,
+                    "expanded": false,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": true,
+                    "title": "Panteion University",
+                    "description": null,
+                    "uri": "internal:/the-team/panteion",
+                    "url": "/the-team/panteion",
+                    "children": []
+                },
+                {
+                    "id": 21,
+                    "uuid": "e7c844dc-3404-4045-836a-4418f8d0fb5f",
+                    "menu_name": "team-side-menu",
+                    "parent": null,
+                    "weight": -49,
+                    "expanded": false,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": true,
+                    "title": "Athena RC",
+                    "description": null,
+                    "uri": "internal:/the-team/athena",
+                    "url": "/the-team/athena",
+                    "children": []
+                },
+                {
+                    "id": 22,
+                    "uuid": "3b55de15-c10e-4438-af37-6a30e3248d31",
+                    "menu_name": "team-side-menu",
+                    "parent": null,
+                    "weight": -48,
+                    "expanded": false,
+                    "enabled": true,
+                    "langcode": "en",
+                    "is_fallback_translation": true,
+                    "title": "Other Members",
+                    "description": null,
+                    "uri": "internal:/the-team/other",
+                    "url": "/the-team/other",
+                    "children": []
+                }
+            ]
+        }
+    },
+    "flat": [
+        {
+            "id": 1,
+            "uuid": "346c0b5f-8cff-4ca5-98c3-285515cf9bd0",
+            "menu_name": "main",
+            "parent": "",
+            "weight": -50,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Home",
+                    "description": null,
+                    "uri": "internal:/",
+                    "url": "/"
+                }
+            }
+        },
+        {
+            "id": 5,
+            "uuid": "2ca431a8-a3d5-4d62-84f0-f3cff7b8f3fa",
+            "menu_name": "main",
+            "parent": "menu_link_content:d658f91e-12e4-4ffb-8b20-0f090d73f348",
+            "weight": -50,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "News",
+                    "description": null,
+                    "uri": "internal:/all-news",
+                    "url": "/all-news"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Νέα",
+                    "description": null,
+                    "uri": "internal:/all-news",
+                    "url": "/all-news"
+                }
+            }
+        },
+        {
+            "id": 9,
+            "uuid": "2b004f90-b30c-4ec9-989d-77203b04d82f",
+            "menu_name": "main",
+            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+            "weight": -50,
+            "expanded": true,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "DeΜoLiSH in brief",
+                    "description": null,
+                    "uri": "internal:/project/demolish-in-brief",
+                    "url": "/project/demolish-in-brief"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Το DeMoLiSH εν συντομία",
+                    "description": null,
+                    "uri": "internal:/project/demolish-in-brief",
+                    "url": "/project/demolish-in-brief"
+                }
+            }
+        },
+        {
+            "id": 16,
+            "uuid": "365eaff2-9e31-41b2-99fc-8d35c9cc58ab",
+            "menu_name": "main",
+            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+            "weight": -50,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Verbal Aggression Analysis",
+                    "description": null,
+                    "uri": "internal:/methodology/va-analysis",
+                    "url": "/methodology/va-analysis"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Ανάλυση λεκτικής επιθετικότητας",
+                    "description": null,
+                    "uri": "internal:/methodology/va-analysis",
+                    "url": "/methodology/va-analysis"
+                }
+            }
+        },
+        {
+            "id": 20,
+            "uuid": "ff038c23-d054-424a-971e-e9794388e4e3",
+            "menu_name": "team-side-menu",
+            "parent": "",
+            "weight": -50,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Panteion University",
+                    "description": null,
+                    "uri": "internal:/the-team/panteion",
+                    "url": "/the-team/panteion"
+                }
+            }
+        },
+        {
+            "id": 23,
+            "uuid": "2d9a3816-1bed-47cd-9e22-b5a020fff2e4",
+            "menu_name": "main",
+            "parent": "menu_link_content:0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+            "weight": -50,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Panteion University",
+                    "description": null,
+                    "uri": "internal:/the-team/panteion",
+                    "url": "/the-team/panteion"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Πάντειον Πανεπιστήμιο",
+                    "description": null,
+                    "uri": "internal:/the-team/panteion",
+                    "url": "/the-team/panteion"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "uuid": "140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+            "menu_name": "main",
+            "parent": "",
+            "weight": -49,
+            "expanded": true,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "The Project",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Το έργο",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#"
+                }
+            }
+        },
+        {
+            "id": 6,
+            "uuid": "1607133a-eed0-42ba-88a8-9988cacf4fb4",
+            "menu_name": "main",
+            "parent": "menu_link_content:d658f91e-12e4-4ffb-8b20-0f090d73f348",
+            "weight": -49,
+            "expanded": false,
+            "enabled": false,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Events",
+                    "description": null,
+                    "uri": "internal:/all-events",
+                    "url": "/all-events"
+                }
+            }
+        },
+        {
+            "id": 10,
+            "uuid": "4b3e2eaa-f7cf-4833-bbcb-09ec88f82b97",
+            "menu_name": "main",
+            "parent": "menu_link_content:2b004f90-b30c-4ec9-989d-77203b04d82f",
+            "weight": -49,
+            "expanded": false,
+            "enabled": false,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Objectives",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#"
+                }
+            }
+        },
+        {
+            "id": 13,
+            "uuid": "63a305a5-3c61-4883-b971-87cf168b5dbf",
+            "menu_name": "main",
+            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+            "weight": -49,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Work-packages",
+                    "description": null,
+                    "uri": "internal:/project/work-packages",
+                    "url": "/project/work-packages"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Πακέτα εργασίας",
+                    "description": null,
+                    "uri": "internal:/project/work-packages",
+                    "url": "/project/work-packages"
+                }
+            }
+        },
+        {
+            "id": 17,
+            "uuid": "21b22bda-6872-4c3c-a7cf-f60381f8d3a0",
+            "menu_name": "main",
+            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+            "weight": -49,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Event Analysis",
+                    "description": null,
+                    "uri": "internal:/methodology/event-analysis",
+                    "url": "/methodology/event-analysis"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Ανάλυση γεγονότων",
+                    "description": null,
+                    "uri": "internal:/methodology/event-analysis",
+                    "url": "/methodology/event-analysis"
+                }
+            }
+        },
+        {
+            "id": 21,
+            "uuid": "e7c844dc-3404-4045-836a-4418f8d0fb5f",
+            "menu_name": "team-side-menu",
+            "parent": "",
+            "weight": -49,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Athena RC",
+                    "description": null,
+                    "uri": "internal:/the-team/athena",
+                    "url": "/the-team/athena"
+                }
+            }
+        },
+        {
+            "id": 24,
+            "uuid": "56ed3d96-fc88-4f78-b2a8-4aa41f65a278",
+            "menu_name": "main",
+            "parent": "menu_link_content:0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+            "weight": -49,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Athena RC",
+                    "description": null,
+                    "uri": "internal:/the-team/athena",
+                    "url": "/the-team/athena"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Αθηνά",
+                    "description": null,
+                    "uri": "internal:/the-team/athena",
+                    "url": "/the-team/athena"
+                }
+            }
+        },
+        {
+            "id": 3,
+            "uuid": "0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+            "menu_name": "main",
+            "parent": "",
+            "weight": -48,
+            "expanded": true,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "The team",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Ερευνητική ομάδα",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#"
+                }
+            }
+        },
+        {
+            "id": 11,
+            "uuid": "67b716d5-b407-4323-905a-bc428b146598",
+            "menu_name": "main",
+            "parent": "menu_link_content:2b004f90-b30c-4ec9-989d-77203b04d82f",
+            "weight": -48,
+            "expanded": false,
+            "enabled": false,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Innovation",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#"
+                }
+            }
+        },
+        {
+            "id": 14,
+            "uuid": "af8aae17-4b58-450e-b4d3-4f386118a067",
+            "menu_name": "main",
+            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+            "weight": -48,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Deliverables",
+                    "description": null,
+                    "uri": "internal:/project/deliverables",
+                    "url": "/project/deliverables"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Παραδοτέα",
+                    "description": null,
+                    "uri": "internal:/project/deliverables",
+                    "url": "/project/deliverables"
+                }
+            }
+        },
+        {
+            "id": 18,
+            "uuid": "c2517850-e049-44ac-86e8-8d60f879275a",
+            "menu_name": "main",
+            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+            "weight": -48,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Linking Hate Speech & Hate Crime",
+                    "description": null,
+                    "uri": "internal:/methodology/linking-hate-speech-and-hate-crime",
+                    "url": "/methodology/linking-hate-speech-and-hate-crime"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Σύνδεση ρητορικής μίσους & εγκλημάτων μίσους",
+                    "description": null,
+                    "uri": "internal:/methodology/linking-hate-speech-and-hate-crime",
+                    "url": "/methodology/linking-hate-speech-and-hate-crime"
+                }
+            }
+        },
+        {
+            "id": 22,
+            "uuid": "3b55de15-c10e-4438-af37-6a30e3248d31",
+            "menu_name": "team-side-menu",
+            "parent": "",
+            "weight": -48,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Other Members",
+                    "description": null,
+                    "uri": "internal:/the-team/other",
+                    "url": "/the-team/other"
+                }
+            }
+        },
+        {
+            "id": 25,
+            "uuid": "a51a8b59-76ad-46a1-8678-a428645ee08a",
+            "menu_name": "main",
+            "parent": "menu_link_content:0b5f4974-2f4b-4756-b75e-eb9bafcec794",
+            "weight": -48,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Other members",
+                    "description": null,
+                    "uri": "internal:/the-team/other",
+                    "url": "/the-team/other"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Άλλα μέλη",
+                    "description": null,
+                    "uri": "internal:/the-team/other",
+                    "url": "/the-team/other"
+                }
+            }
+        },
+        {
+            "id": 7,
+            "uuid": "dc02e9c3-5cb3-4d8f-ba7d-8a57d8c91601",
+            "menu_name": "main",
+            "parent": "menu_link_content:140315fc-61ea-4fd0-99fb-a97ea6b2b541",
+            "weight": -47,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Publications",
+                    "description": null,
+                    "uri": "internal:/publications",
+                    "url": "/publications"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Δημοσιεύσεις",
+                    "description": null,
+                    "uri": "internal:/publications",
+                    "url": "/publications"
+                }
+            }
+        },
+        {
+            "id": 8,
+            "uuid": "8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+            "menu_name": "main",
+            "parent": "",
+            "weight": -47,
+            "expanded": true,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Methodology",
+                    "description": null,
+                    "uri": "internal:/methodology",
+                    "url": "/methodology"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Μεθοδολογία",
+                    "description": null,
+                    "uri": "internal:/methodology",
+                    "url": "/methodology"
+                }
+            }
+        },
+        {
+            "id": 12,
+            "uuid": "89186b8f-57f3-44ad-abc0-50d3e799798e",
+            "menu_name": "main",
+            "parent": "menu_link_content:2b004f90-b30c-4ec9-989d-77203b04d82f",
+            "weight": -47,
+            "expanded": false,
+            "enabled": false,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Contribution",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#"
+                }
+            }
+        },
+        {
+            "id": 19,
+            "uuid": "c4a32e23-9a31-4c41-a057-c6e8efa2654d",
+            "menu_name": "main",
+            "parent": "menu_link_content:8b8facd4-ee40-48c2-8aa2-23fceb02999d",
+            "weight": -47,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Ethics",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#"
+                }
+            }
+        },
+        {
+            "id": 15,
+            "uuid": "e54c1cdc-d35d-4446-a93c-330f78ff4445",
+            "menu_name": "main",
+            "parent": "",
+            "weight": -46,
+            "expanded": false,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "Monitoring tool",
+                    "description": null,
+                    "uri": "internal:/va-monitoring-tool",
+                    "url": "/va-monitoring-tool"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Αποτελέσματα",
+                    "description": null,
+                    "uri": "internal:/va-monitoring-tool",
+                    "url": "/va-monitoring-tool"
+                }
+            }
+        },
+        {
+            "id": 4,
+            "uuid": "d658f91e-12e4-4ffb-8b20-0f090d73f348",
+            "menu_name": "main",
+            "parent": "",
+            "weight": -45,
+            "expanded": true,
+            "enabled": true,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "title": "News&Events",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#"
+                },
+                "el": {
+                    "langcode": "el",
+                    "title": "Νέα&Εκδηλώσεις",
+                    "description": null,
+                    "uri": "internal:#",
+                    "url": "#"
+                }
+            }
+        }
+    ]
+}

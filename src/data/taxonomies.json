@@ -1,0 +1,290 @@
+{
+    "raw": [
+        {
+            "tid": 1,
+            "uuid": "52d2007c-56b6-4a86-8157-3c7e20beedc2",
+            "vid": "team_organization",
+            "weight": 0,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "name": "Panteion University",
+                    "description": null,
+                    "description_format": null,
+                    "status": true,
+                    "changed": "2024-01-09T09:25:04+00:00",
+                    "path": null,
+                    "internal_path": "/taxonomy/term/1"
+                },
+                "el": {
+                    "langcode": "el",
+                    "name": "Πάντειον Πανεπιστήμιο",
+                    "description": null,
+                    "description_format": null,
+                    "status": true,
+                    "changed": "2024-02-27T08:14:47+00:00",
+                    "path": null,
+                    "internal_path": "/taxonomy/term/1"
+                }
+            }
+        },
+        {
+            "tid": 2,
+            "uuid": "c46e0801-2138-467f-930b-869aed088860",
+            "vid": "team_organization",
+            "weight": 1,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "name": "Athena RC",
+                    "description": null,
+                    "description_format": null,
+                    "status": true,
+                    "changed": "2024-01-09T09:25:04+00:00",
+                    "path": null,
+                    "internal_path": "/taxonomy/term/2"
+                },
+                "el": {
+                    "langcode": "el",
+                    "name": "Ερευνητικό κέντρο \"Αθηνά\"",
+                    "description": null,
+                    "description_format": null,
+                    "status": true,
+                    "changed": "2024-02-27T08:17:00+00:00",
+                    "path": null,
+                    "internal_path": "/taxonomy/term/2"
+                }
+            }
+        },
+        {
+            "tid": 4,
+            "uuid": "b4493328-6dff-4c0a-9dfe-a890f0656f22",
+            "vid": "team_organization",
+            "weight": 2,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "name": "National and Kapodistrian University of Athens",
+                    "description": null,
+                    "description_format": null,
+                    "status": true,
+                    "changed": "2024-01-09T09:25:04+00:00",
+                    "path": null,
+                    "internal_path": "/taxonomy/term/4"
+                },
+                "el": {
+                    "langcode": "el",
+                    "name": "Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών",
+                    "description": null,
+                    "description_format": null,
+                    "status": true,
+                    "changed": "2024-02-27T08:13:18+00:00",
+                    "path": null,
+                    "internal_path": "/taxonomy/term/4"
+                }
+            }
+        },
+        {
+            "tid": 5,
+            "uuid": "e0e08e1d-284f-45d1-b3b8-1ad845a77b36",
+            "vid": "team_organization",
+            "weight": 4,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "name": "South East European Studies at Oxford (SEESOX)",
+                    "description": null,
+                    "description_format": null,
+                    "status": true,
+                    "changed": "2023-12-18T10:20:21+00:00",
+                    "path": null,
+                    "internal_path": "/taxonomy/term/5"
+                },
+                "el": {
+                    "langcode": "el",
+                    "name": "South East European Studies at Oxford (SEESOX)",
+                    "description": null,
+                    "description_format": null,
+                    "status": true,
+                    "changed": "2024-02-27T08:14:45+00:00",
+                    "path": null,
+                    "internal_path": "/taxonomy/term/5"
+                }
+            }
+        },
+        {
+            "tid": 6,
+            "uuid": "9c7c80ee-582c-4e32-bd4b-260d2cd662f1",
+            "vid": "team_organization",
+            "weight": 3,
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "name": "Racist Violence Recording Network (RVRN)",
+                    "description": null,
+                    "description_format": null,
+                    "status": true,
+                    "changed": "2023-12-18T10:20:21+00:00",
+                    "path": null,
+                    "internal_path": "/taxonomy/term/6"
+                },
+                "el": {
+                    "langcode": "el",
+                    "name": "Δίκτυο Καταγραφής Περιστατικών Ρατσιστικής Βίας",
+                    "description": null,
+                    "description_format": null,
+                    "status": true,
+                    "changed": "2024-02-27T08:15:28+00:00",
+                    "path": null,
+                    "internal_path": "/taxonomy/term/6"
+                }
+            }
+        }
+    ],
+    "by_language": {
+        "en": [
+            {
+                "tid": 1,
+                "uuid": "52d2007c-56b6-4a86-8157-3c7e20beedc2",
+                "vid": "team_organization",
+                "weight": 0,
+                "langcode": "en",
+                "slug": "panteion-university",
+                "name": "Panteion University",
+                "description": "",
+                "status": true,
+                "changed": "2024-01-09T09:25:04+00:00",
+                "path": null,
+                "internal_path": "/taxonomy/term/1"
+            },
+            {
+                "tid": 2,
+                "uuid": "c46e0801-2138-467f-930b-869aed088860",
+                "vid": "team_organization",
+                "weight": 1,
+                "langcode": "en",
+                "slug": "athena-rc",
+                "name": "Athena RC",
+                "description": "",
+                "status": true,
+                "changed": "2024-01-09T09:25:04+00:00",
+                "path": null,
+                "internal_path": "/taxonomy/term/2"
+            },
+            {
+                "tid": 4,
+                "uuid": "b4493328-6dff-4c0a-9dfe-a890f0656f22",
+                "vid": "team_organization",
+                "weight": 2,
+                "langcode": "en",
+                "slug": "national-and-kapodistrian-university-of-athens",
+                "name": "National and Kapodistrian University of Athens",
+                "description": "",
+                "status": true,
+                "changed": "2024-01-09T09:25:04+00:00",
+                "path": null,
+                "internal_path": "/taxonomy/term/4"
+            },
+            {
+                "tid": 5,
+                "uuid": "e0e08e1d-284f-45d1-b3b8-1ad845a77b36",
+                "vid": "team_organization",
+                "weight": 4,
+                "langcode": "en",
+                "slug": "south-east-european-studies-at-oxford-seesox",
+                "name": "South East European Studies at Oxford (SEESOX)",
+                "description": "",
+                "status": true,
+                "changed": "2023-12-18T10:20:21+00:00",
+                "path": null,
+                "internal_path": "/taxonomy/term/5"
+            },
+            {
+                "tid": 6,
+                "uuid": "9c7c80ee-582c-4e32-bd4b-260d2cd662f1",
+                "vid": "team_organization",
+                "weight": 3,
+                "langcode": "en",
+                "slug": "racist-violence-recording-network-rvrn",
+                "name": "Racist Violence Recording Network (RVRN)",
+                "description": "",
+                "status": true,
+                "changed": "2023-12-18T10:20:21+00:00",
+                "path": null,
+                "internal_path": "/taxonomy/term/6"
+            }
+        ],
+        "el": [
+            {
+                "tid": 1,
+                "uuid": "52d2007c-56b6-4a86-8157-3c7e20beedc2",
+                "vid": "team_organization",
+                "weight": 0,
+                "langcode": "el",
+                "slug": "panteion-university",
+                "name": "Πάντειον Πανεπιστήμιο",
+                "description": "",
+                "status": true,
+                "changed": "2024-02-27T08:14:47+00:00",
+                "path": null,
+                "internal_path": "/taxonomy/term/1"
+            },
+            {
+                "tid": 2,
+                "uuid": "c46e0801-2138-467f-930b-869aed088860",
+                "vid": "team_organization",
+                "weight": 1,
+                "langcode": "el",
+                "slug": "athena-rc",
+                "name": "Ερευνητικό κέντρο \"Αθηνά\"",
+                "description": "",
+                "status": true,
+                "changed": "2024-02-27T08:17:00+00:00",
+                "path": null,
+                "internal_path": "/taxonomy/term/2"
+            },
+            {
+                "tid": 4,
+                "uuid": "b4493328-6dff-4c0a-9dfe-a890f0656f22",
+                "vid": "team_organization",
+                "weight": 2,
+                "langcode": "el",
+                "slug": "national-and-kapodistrian-university-of-athens",
+                "name": "Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών",
+                "description": "",
+                "status": true,
+                "changed": "2024-02-27T08:13:18+00:00",
+                "path": null,
+                "internal_path": "/taxonomy/term/4"
+            },
+            {
+                "tid": 5,
+                "uuid": "e0e08e1d-284f-45d1-b3b8-1ad845a77b36",
+                "vid": "team_organization",
+                "weight": 4,
+                "langcode": "el",
+                "slug": "south-east-european-studies-at-oxford-seesox",
+                "name": "South East European Studies at Oxford (SEESOX)",
+                "description": "",
+                "status": true,
+                "changed": "2024-02-27T08:14:45+00:00",
+                "path": null,
+                "internal_path": "/taxonomy/term/5"
+            },
+            {
+                "tid": 6,
+                "uuid": "9c7c80ee-582c-4e32-bd4b-260d2cd662f1",
+                "vid": "team_organization",
+                "weight": 3,
+                "langcode": "el",
+                "slug": "racist-violence-recording-network-rvrn",
+                "name": "Δίκτυο Καταγραφής Περιστατικών Ρατσιστικής Βίας",
+                "description": "",
+                "status": true,
+                "changed": "2024-02-27T08:15:28+00:00",
+                "path": null,
+                "internal_path": "/taxonomy/term/6"
+            }
+        ]
+    }
+}

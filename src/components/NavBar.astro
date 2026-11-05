@@ -1,112 +1,255 @@
 ---
-import ThemeToggle from './ThemeToggle.astro';
-import { navItems, site } from '../data/site';
+import menusData from '../data/menus.json';
+import { getLanguageSwitchUrls, localizeUrl, type LangCode } from '../data/site';
 
-const currentPath = Astro.url.pathname;
-
-function isActive(href: string): boolean {
-  return href === '/' ? currentPath === '/' : currentPath.startsWith(href);
+interface Props {
+  lang?: LangCode;
+  isFront?: boolean;
+  pageTitle?: string;
 }
+
+const { lang = 'en', isFront = false, pageTitle = '' } = Astro.props;
+
+const pathname = Astro.url.pathname;
+const switchUrls = getLanguageSwitchUrls(pathname);
+const homeUrl = lang === 'el' ? '/el' : '/';
+const searchAction = lang === 'el' ? '/el/search' : '/search';
+
+interface MenuItem {
+  id: number | string;
+  title: string;
+  url: string;
+  enabled: boolean;
+  expanded: boolean;
+  weight: number;
+  children?: MenuItem[];
+}
+
+const rawMenu = (menusData.trees[lang]?.main ?? menusData.trees.en.main) as unknown as MenuItem[];
+const menuItems = rawMenu
+  .filter((item) => item.enabled)
+  .map((item) => ({
+    ...item,
+    href: localizeUrl(item.url, lang),
+    children: (item.children ?? [])
+      .filter((child) => child.enabled)
+      .map((child) => ({
+        ...child,
+        href: localizeUrl(child.url, lang),
+      })),
+  }));
+
+const isActive = (href: string): boolean => {
+  if (!href || href === '#') return false;
+  const normPath = pathname.endsWith('/') && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
+  const normHref = href.endsWith('/') && href.length > 1 ? href.slice(0, -1) : href;
+  return normPath === normHref;
+};
 ---
 
-<header>
-  <nav class="navbar aw-navbar" aria-label="Main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item aw-brand" href="/">
-          <span class="aw-brand-mark" aria-hidden="true">
-            {/* Simple dumbbell mark — swap for your own logo if you have one. */}
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <rect x="2" y="9" width="3" height="6" rx="1" />
-              <rect x="19" y="9" width="3" height="6" rx="1" />
-              <rect x="6" y="7.5" width="2.5" height="9" rx="1" />
-              <rect x="15.5" y="7.5" width="2.5" height="9" rx="1" />
-              <rect x="7.5" y="10.5" width="9" height="3" rx="1.5" />
-            </svg>
-          </span>
-          {site.name}
-        </a>
-
-        <button
-          type="button"
-          class="navbar-burger"
-          aria-label="Open menu"
-          aria-expanded="false"
-          aria-controls="main-navbar"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </button>
-      </div>
-
-      <div id="main-navbar" class="navbar-menu">
-        <div class="navbar-end">
-          {
-            navItems.map((item) => (
-              <a
-                class:list={['navbar-item', { 'is-active': isActive(item.href) }]}
-                href={item.href}
-                aria-current={isActive(item.href) ? 'page' : undefined}
-              >
-                {item.label}
+<header class="header">
+  <div class="header-cicle header-cicle1"></div>
+  <div class="header-cicle header-cicle3"></div>
+  <div class="header-cicle header-cicle4"></div>
+  <div class="header-cicle header-cicle6"></div>
+  <div class="header-cicle header-cicle7"></div>
+  <div class="header-cicle header-cicle8"></div>
+  <div class="header-cicle header-cicle10"></div>
+  {
+    isFront && (
+      <>
+        <div class="header-cicle header-cicle2"></div>
+        <div class="header-cicle header-cicle5"></div>
+        <div class="header-cicle header-cicle9"></div>
+      </>
+    )
+  }
+  <div class="container">
+    <div class="header-main">
+      <div class="site-brand">
+        <div class="region region-header">
+          <div id="block-vani-branding" class="site-branding block block-system block-system-branding-block">
+            <div class="site-logo">
+              <a href={homeUrl} title="Home" rel="home">
+                <img src="/files/path_newFont_bold.png" alt="Home" />
               </a>
-            ))
-          }
-          <div class="navbar-item">
-            <ThemeToggle />
+            </div>
           </div>
-          <div class="navbar-item">
-            <a class="button is-primary" href="/contact">Book a free class</a>
+        </div>
+      </div>
+      <div class="header-main-right">
+        <div class="mobile-menu"><i class="icon-menu"></i></div>
+        <div class="primary-menu-wrapper">
+          <div class="menu-wrap">
+            <div class="close-mobile-menu">x</div>
+            <div class="region region-primary-menu">
+              <div
+                class="language-switcher-language-url block block-languages-dropdown block-lang-drop-bootstraplanguage-interface"
+                id="block-vani-languageswitcherbootstrap"
+              >
+                <div class="btn-group">
+                  <button
+                    class="btn btn-default btn- dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    aria-label="Select language"
+                  >
+                    <span class="lang-sm" lang={lang}></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                      <a href={switchUrls.en}>
+                        <span class="lang-sm lang-lbl" lang="en"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href={switchUrls.el}>
+                        <span class="lang-sm lang-lbl" lang="el"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <nav
+                role="navigation"
+                aria-labelledby="block-vani-main-menu-menu"
+                id="block-vani-main-menu"
+                class="block block-menu navigation menu--main"
+              >
+                <h2 class="visually-hidden" id="block-vani-main-menu-menu">Main navigation</h2>
+                <ul class="main-menu">
+                  {
+                    menuItems.map((item) => {
+                      const hasChildren = item.children && item.children.length > 0;
+                      const active =
+                        isActive(item.href) ||
+                        (hasChildren && item.children.some((c) => isActive(c.href)));
+                      return (
+                        <li
+                          class:list={[
+                            'main-menu-item',
+                            { expanded: hasChildren, 'is-active': active },
+                          ]}
+                        >
+                          <a href={item.href} class:list={[{ 'is-active': isActive(item.href) }]}>
+                            {item.title}
+                            {hasChildren && <span class="dropdown-arrow">+</span>}
+                          </a>
+                          {hasChildren && (
+                            <ul class="submenu">
+                              {item.children.map((child) => (
+                                <li class="main-menu-item-sub">
+                                  <a
+                                    href={child.href}
+                                    class:list={[{ 'is-active': isActive(child.href) }]}
+                                  >
+                                    {child.title}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </li>
+                      );
+                    })
+                  }
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="full-page-search">
+          <div class="search-icon">
+            <a href="#" aria-label="Open search"><img src="/themes/vani/images/search.svg" alt="search icon" /></a>
+          </div>
+          <div class="search-box">
+            <div class="search-box-close"></div>
+            <div class="search-box-content">
+              <div class="region region-search-box">
+                <div class="views-exposed-form block block-views block-views-exposed-filter-blocksite-search-page-1" id="block-vani-exposedformsite-searchpage-1">
+                  <h2 class="block-title">{lang === 'el' ? 'Αναζήτηση' : 'Search'}</h2>
+                  <form action={searchAction} method="get" id="views-exposed-form-site-search-page-1" accept-charset="UTF-8">
+                    <div class="form-item">
+                      <input
+                        placeholder={lang === 'el' ? 'Αναζήτηση...' : 'Enter your keywords'}
+                        type="text"
+                        name="search_api_fulltext"
+                        value=""
+                        size="30"
+                        maxlength="128"
+                        class="form-text"
+                      />
+                    </div>
+                    <div class="form-actions">
+                      <input type="submit" value={lang === 'el' ? 'Αναζήτηση' : 'Search'} class="button form-submit" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="search-box-close"></div>
           </div>
         </div>
       </div>
     </div>
-  </nav>
+  </div>
+  {
+    isFront ? (
+      <section class="slider">
+        <div class="container slider-container">
+          <div class="slider-text">
+            <ul class="js-rotating">
+              <li>
+                <h1>
+                  Fighting Bias, Building Bridges. The <em>DeMoLiSH</em> project
+                </h1>
+                <p>
+                  DeMoLiSH is an innovative, multidisciplinary research project addressing hate
+                  speech and xenophobia in Greece expressed online via social media and offline in
+                  real-life behavior from 2015 to 2022 that covers a variety of socio-economic
+                  contexts ranging from the economic to the refugee and the pandemic crisis.
+                </p>
+                <a class="button-link" href={localizeUrl('/project/demolish-in-brief', lang)}>
+                  {lang === 'el' ? 'Μάθετε περισσότερα' : 'Find out more'}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="slider-image">
+            <img src="/files/undraw_team_up_re_84ok.svg" alt="slider image" />
+          </div>
+        </div>
+        <div class="slider-svg">
+          <img src="/themes/vani/images/slider.svg" alt="svg" />
+        </div>
+      </section>
+    ) : (
+      <div id="page-header">
+        <div class="container">
+          <div class="region region-page-header">
+            <div id="block-vani-page-title" class="block block-core block-page-title-block">
+              <h1 class="page-title">{pageTitle}</h1>
+            </div>
+            <div id="block-vani-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+              <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+                <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+                <ol class="breadcrumb-items">
+                  <li class="breadcrumb-item">
+                    <a href={homeUrl}>{lang === 'el' ? 'Αρχική' : 'Home'}</a>
+                  </li>
+                  {pageTitle && (
+                    <li class="breadcrumb-item">
+                      <span>{pageTitle}</span>
+                    </li>
+                  )}
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
 </header>
-
-<script>
-  // Bulma ships without JS, so the mobile menu toggle lives here.
-  // Document-level delegation + fresh queries: with <ClientRouter /> the menu
-  // DOM is re-created on every client-side navigation, but this listener and
-  // the getElementById lookup still work because they resolve elements per event.
-  const closeMenu = () => {
-    const burger = document.querySelector<HTMLElement>('.navbar-burger');
-    const menu = document.getElementById('main-navbar');
-    const wasOpen = burger?.getAttribute('aria-expanded') === 'true';
-    burger?.setAttribute('aria-expanded', 'false');
-    burger?.setAttribute('aria-label', 'Open menu');
-    burger?.classList.remove('is-active');
-    menu?.classList.remove('is-active');
-    // Return focus to the trigger when the menu was open (Escape / outside click).
-    if (wasOpen && document.activeElement instanceof HTMLElement) {
-      burger?.focus();
-    }
-  };
-
-  document.addEventListener('click', (event) => {
-    const target = event.target;
-    if (!(target instanceof Element)) return;
-
-    const burger = target.closest('.navbar-burger');
-    if (burger) {
-      const isOpen = burger.getAttribute('aria-expanded') === 'true';
-      const menu = document.getElementById('main-navbar');
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      burger.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
-      burger.classList.toggle('is-active', !isOpen);
-      menu?.classList.toggle('is-active', !isOpen);
-      return;
-    }
-
-    // Close the menu when a link is chosen or the click lands outside the navbar.
-    if (target.closest('#main-navbar a') || !target.closest('.navbar')) {
-      closeMenu();
-    }
-  });
-
-  // Close the menu with Escape.
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeMenu();
-  });
-</script>

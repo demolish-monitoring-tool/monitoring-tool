@@ -1,0 +1,500 @@
+{
+    "blocks": [
+        {
+            "id": 1,
+            "uuid": "2b33212e-bd78-444f-8b1c-bc7f6733553c",
+            "type": "simple",
+            "langcode": "en",
+            "info": "Footer logo",
+            "status": true,
+            "changed": "2023-11-21T07:15:01+00:00",
+            "placements": [
+                {
+                    "id": "vani_footerlogo",
+                    "theme": "vani",
+                    "region": "footer_first",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": []
+                }
+            ],
+            "body": "<img src=\"/files/Demolish_with_text_export.svg\" alt=\"footer logo\">"
+        },
+        {
+            "id": 2,
+            "uuid": "d0448c99-566d-431c-b134-7de0f454fb1a",
+            "type": "simple",
+            "langcode": "en",
+            "info": "Logos EN",
+            "status": true,
+            "changed": "2023-11-22T13:00:48+00:00",
+            "placements": [
+                {
+                    "id": "vani_logos",
+                    "theme": "vani",
+                    "region": "hidden_blocks",
+                    "weight": -8,
+                    "status": true,
+                    "visibility": []
+                },
+                {
+                    "id": "vani_logos_2",
+                    "theme": "vani",
+                    "region": "highlighted",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": {
+                        "request_path": {
+                            "id": "request_path",
+                            "negate": false,
+                            "pages": "<front>"
+                        }
+                    }
+                }
+            ],
+            "body": "<div class=\"flex-row-div\"><div><img class=\"partnerlogo\" src=\"/files/Greece%202.0_NextGeneration_en%201.png\" alt=\"greece 2.0 logo\" width=\"40%\"></div><div><img class=\"partnerlogo\" src=\"/files/elidek_logo_en.png\" alt=\"elidek logo\" width=\"100%\"></div></div>"
+        },
+        {
+            "id": 3,
+            "uuid": "5dd70835-2c0e-45dc-b8ea-8c56ec010e09",
+            "type": "simple",
+            "langcode": "en",
+            "info": "Scientific and/or social impact",
+            "status": true,
+            "changed": "2023-12-14T10:21:24+00:00",
+            "placements": [
+                {
+                    "id": "vani_scientificandorsocialimpact",
+                    "theme": "vani",
+                    "region": "hidden_blocks",
+                    "weight": -7,
+                    "status": true,
+                    "visibility": []
+                },
+                {
+                    "id": "vani_scientificandorsocialimpact_2",
+                    "theme": "vani",
+                    "region": "content_home",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": {
+                        "request_path": {
+                            "id": "request_path",
+                            "negate": false,
+                            "pages": "<front>"
+                        },
+                        "language": {
+                            "id": "language",
+                            "negate": false,
+                            "context_mapping": {
+                                "language": "@language.current_language_context:language_interface"
+                            },
+                            "langcodes": {
+                                "en": "en"
+                            }
+                        }
+                    }
+                }
+            ],
+            "body": "<div class=\"field field--name-body field--type-text-with-summary field--label-hidden field-item\"><div class=\"full\" style=\"gap:2em;\"><div class=\"item\"><img src=\"/files/undraw_innovative_re_rr5i.svg\" alt=\"work image\"></div><div class=\"item\"><h3>Understanding Xenophobia</h3><p>DeMoLiSH unravels the roots of hate, fostering understanding through advanced research methods.</p><h3>Empowering Change</h3><p>Short-term impact: Advancing interdisciplinary research and providing tools to reshape the narrative.</p><h3>Building a Tolerant Future</h3><p>Long-term goals: Influencing the core of xenophobia, addressing hate speech, and supporting victims—DeMoLiSH for a more tolerant world.</p><p><a class=\"button-link\" href=\"/project/demolish-in-brief\">Read more</a></p></div></div></div>"
+        },
+        {
+            "id": 4,
+            "uuid": "61083357-f2ce-45f5-aa77-9fbd53d49b91",
+            "type": "simple",
+            "langcode": "en",
+            "info": "VA analysis image only",
+            "status": true,
+            "changed": "2023-12-14T08:54:10+00:00",
+            "placements": [],
+            "body": "<img src=\"/files/wordCloud.png\">"
+        },
+        {
+            "id": 5,
+            "uuid": "3dc5e557-9300-4530-9373-ac545740422d",
+            "type": "simple",
+            "langcode": "en",
+            "info": "Επιστημονικός και κοινωνικός αντίκτυπος",
+            "status": true,
+            "changed": "2024-03-13T10:16:47+00:00",
+            "placements": [
+                {
+                    "id": "vani_epistimonikoskaikoinonikosantiktypos",
+                    "theme": "vani",
+                    "region": "content_home",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": {
+                        "language": {
+                            "id": "language",
+                            "negate": false,
+                            "context_mapping": {
+                                "language": "@language.current_language_context:language_interface"
+                            },
+                            "langcodes": {
+                                "el": "el"
+                            }
+                        },
+                        "request_path": {
+                            "id": "request_path",
+                            "negate": false,
+                            "pages": "<front>"
+                        }
+                    }
+                }
+            ],
+            "body": "<div class=\"field field--name-body field--type-text-with-summary field--label-hidden field-item\"><div class=\"full\" style=\"gap:2em;\"><div class=\"item\"><img src=\"/files/undraw_innovative_re_rr5i.svg\" alt=\"work image\"></div><div class=\"item\"><h3>Κατανόηση της ξενοφοβίας</h3><p>Το DeMoLiSH αναδεικνύει τις ρίζες του μίσους, προωθώντας την κατανόηση μέσω προηγμένων ερευνητικών μεθόδων.</p><h3>Ενίσχυση της αλλαγής</h3><p>Βραχυπρόθεσμος αντίκτυπος: Προώθηση της διεπιστημονικής έρευνας και παροχή εργαλείων για την αλλαγή αφηγήματος.</p><h3>Χτίζοντας ένα ανεκτικό μέλλον</h3><p>Μακροπρόθεσμοι στόχοι: Επιρροή στον πυρήνα της ξενοφοβίας, αντιμετώπιση της ρητορικής του μίσους και υποστήριξη των θυμάτων.</p><p><a class=\"button-link\" href=\"/project/demolish-in-brief\">Read more</a></p></div></div></div>"
+        },
+        {
+            "id": 6,
+            "uuid": "45a7bf10-3567-46fd-949b-adb48d524892",
+            "type": "simple",
+            "langcode": "en",
+            "info": "funding en",
+            "status": true,
+            "changed": "2024-11-26T08:27:28+00:00",
+            "placements": [
+                {
+                    "id": "vani_fundingen",
+                    "theme": "vani",
+                    "region": "hidden_blocks",
+                    "weight": -5,
+                    "status": true,
+                    "visibility": {
+                        "language": {
+                            "id": "language",
+                            "negate": false,
+                            "context_mapping": {
+                                "language": "@language.current_language_context:language_interface"
+                            },
+                            "langcodes": {
+                                "en": "en"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "vani_fundingen_2",
+                    "theme": "vani",
+                    "region": "footer_fourth",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": {
+                        "language": {
+                            "id": "language",
+                            "negate": false,
+                            "context_mapping": {
+                                "language": "@language.current_language_context:language_interface"
+                            },
+                            "langcodes": {
+                                "en": "en"
+                            }
+                        }
+                    }
+                }
+            ],
+            "body": "<p class=\"MsoNormal\" style=\"line-height:106%;margin-bottom:8.0pt;\"><span style=\"font-size:11.0pt;line-height:106%;\">The research project DeMoLiSH is implemented in the framework of H.F.R.I call “Basic research Financing (Horizontal support of all Sciences)” under the National Recovery and Resilience Plan “Greece 2.0” funded by the European Union – NextGenerationEU (H.F.R.I. Project Number: 15576).<o:p></o:p></span></p>"
+        },
+        {
+            "id": 7,
+            "uuid": "f0f2a507-6cd9-4687-bf3a-3cb6c7908852",
+            "type": "simple",
+            "langcode": "en",
+            "info": "funding el",
+            "status": true,
+            "changed": "2024-11-26T08:27:46+00:00",
+            "placements": [
+                {
+                    "id": "vani_fundingel",
+                    "theme": "vani",
+                    "region": "footer_fourth",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": {
+                        "language": {
+                            "id": "language",
+                            "negate": false,
+                            "context_mapping": {
+                                "language": "@language.current_language_context:language_interface"
+                            },
+                            "langcodes": {
+                                "el": "el"
+                            }
+                        }
+                    }
+                }
+            ],
+            "body": "<p class=\"MsoNormal\" style=\"line-height:106%;margin-bottom:8.0pt;\"><span style=\"font-size:11.0pt;line-height:106%;\">Το ερευνητικό Έργο με τίτλο&nbsp;DeMoLiSH υλοποιείται στο πλαίσιο της δράσης του ΕΛ.ΙΔ.Ε.Κ. «Χρηματοδότηση της Βασικής Έρευνας (Οριζόντια υποστήριξη όλων των Επιστημών)» του Εθνικού Σχεδίου Ανάκαμψης και Ανθεκτικότητας «Ελλάδα 2.0» με τη χρηματοδότηση της Ευρωπαϊκής Ένωσης – NextGenerationEU (Αριθμός Έργου ΕΛ.ΙΔ.Ε.Κ.:&nbsp;&nbsp;15576).<o:p></o:p></span></p>"
+        }
+    ],
+    "raw": [
+        {
+            "id": 1,
+            "uuid": "2b33212e-bd78-444f-8b1c-bc7f6733553c",
+            "type": "simple",
+            "placements": [
+                {
+                    "id": "vani_footerlogo",
+                    "theme": "vani",
+                    "region": "footer_first",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": []
+                }
+            ],
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "info": "Footer logo",
+                    "status": true,
+                    "changed": "2023-11-21T07:15:01+00:00",
+                    "body": "<img src=\"/sites/default/files/Demolish_with_text_export.svg\" alt=\"footer logo\">",
+                    "summary": "",
+                    "body_format": "html"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "uuid": "d0448c99-566d-431c-b134-7de0f454fb1a",
+            "type": "simple",
+            "placements": [
+                {
+                    "id": "vani_logos",
+                    "theme": "vani",
+                    "region": "hidden_blocks",
+                    "weight": -8,
+                    "status": true,
+                    "visibility": []
+                },
+                {
+                    "id": "vani_logos_2",
+                    "theme": "vani",
+                    "region": "highlighted",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": {
+                        "request_path": {
+                            "id": "request_path",
+                            "negate": false,
+                            "pages": "<front>"
+                        }
+                    }
+                }
+            ],
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "info": "Logos EN",
+                    "status": true,
+                    "changed": "2023-11-22T13:00:48+00:00",
+                    "body": "<div class=\"flex-row-div\"><div><img class=\"partnerlogo\" src=\"/sites/default/files/Greece%202.0_NextGeneration_en%201.png\" alt=\"greece 2.0 logo\" width=\"40%\"></div><div><img class=\"partnerlogo\" src=\"/sites/default/files/elidek_logo_en.png\" alt=\"elidek logo\" width=\"100%\"></div></div>",
+                    "summary": "",
+                    "body_format": "html"
+                }
+            }
+        },
+        {
+            "id": 3,
+            "uuid": "5dd70835-2c0e-45dc-b8ea-8c56ec010e09",
+            "type": "simple",
+            "placements": [
+                {
+                    "id": "vani_scientificandorsocialimpact",
+                    "theme": "vani",
+                    "region": "hidden_blocks",
+                    "weight": -7,
+                    "status": true,
+                    "visibility": []
+                },
+                {
+                    "id": "vani_scientificandorsocialimpact_2",
+                    "theme": "vani",
+                    "region": "content_home",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": {
+                        "request_path": {
+                            "id": "request_path",
+                            "negate": false,
+                            "pages": "<front>"
+                        },
+                        "language": {
+                            "id": "language",
+                            "negate": false,
+                            "context_mapping": {
+                                "language": "@language.current_language_context:language_interface"
+                            },
+                            "langcodes": {
+                                "en": "en"
+                            }
+                        }
+                    }
+                }
+            ],
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "info": "Scientific and/or social impact",
+                    "status": true,
+                    "changed": "2023-12-14T10:21:24+00:00",
+                    "body": "<div class=\"field field--name-body field--type-text-with-summary field--label-hidden field-item\"><div class=\"full\" style=\"gap:2em;\"><div class=\"item\"><img src=\"/sites/default/files/undraw_innovative_re_rr5i.svg\" alt=\"work image\"></div><div class=\"item\"><h3>Understanding Xenophobia</h3><p>DeMoLiSH unravels the roots of hate, fostering understanding through advanced research methods.</p><h3>Empowering Change</h3><p>Short-term impact: Advancing interdisciplinary research and providing tools to reshape the narrative.</p><h3>Building a Tolerant Future</h3><p>Long-term goals: Influencing the core of xenophobia, addressing hate speech, and supporting victims—DeMoLiSH for a more tolerant world.</p><p><a class=\"button-link\" href=\"/project/demolish-in-brief\">Read more</a></p></div></div></div>",
+                    "summary": "",
+                    "body_format": "html"
+                }
+            }
+        },
+        {
+            "id": 4,
+            "uuid": "61083357-f2ce-45f5-aa77-9fbd53d49b91",
+            "type": "simple",
+            "placements": [],
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "info": "VA analysis image only",
+                    "status": true,
+                    "changed": "2023-12-14T08:54:10+00:00",
+                    "body": "<img src=\"/sites/default/files/wordCloud.png\">",
+                    "summary": "",
+                    "body_format": "html"
+                }
+            }
+        },
+        {
+            "id": 5,
+            "uuid": "3dc5e557-9300-4530-9373-ac545740422d",
+            "type": "simple",
+            "placements": [
+                {
+                    "id": "vani_epistimonikoskaikoinonikosantiktypos",
+                    "theme": "vani",
+                    "region": "content_home",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": {
+                        "language": {
+                            "id": "language",
+                            "negate": false,
+                            "context_mapping": {
+                                "language": "@language.current_language_context:language_interface"
+                            },
+                            "langcodes": {
+                                "el": "el"
+                            }
+                        },
+                        "request_path": {
+                            "id": "request_path",
+                            "negate": false,
+                            "pages": "<front>"
+                        }
+                    }
+                }
+            ],
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "info": "Επιστημονικός και κοινωνικός αντίκτυπος",
+                    "status": true,
+                    "changed": "2024-03-13T10:16:47+00:00",
+                    "body": "<div class=\"field field--name-body field--type-text-with-summary field--label-hidden field-item\"><div class=\"full\" style=\"gap:2em;\"><div class=\"item\"><img src=\"/sites/default/files/undraw_innovative_re_rr5i.svg\" alt=\"work image\"></div><div class=\"item\"><h3>Κατανόηση της ξενοφοβίας</h3><p>Το DeMoLiSH αναδεικνύει τις ρίζες του μίσους, προωθώντας την κατανόηση μέσω προηγμένων ερευνητικών μεθόδων.</p><h3>Ενίσχυση της αλλαγής</h3><p>Βραχυπρόθεσμος αντίκτυπος: Προώθηση της διεπιστημονικής έρευνας και παροχή εργαλείων για την αλλαγή αφηγήματος.</p><h3>Χτίζοντας ένα ανεκτικό μέλλον</h3><p>Μακροπρόθεσμοι στόχοι: Επιρροή στον πυρήνα της ξενοφοβίας, αντιμετώπιση της ρητορικής του μίσους και υποστήριξη των θυμάτων.</p><p><a class=\"button-link\" href=\"/project/demolish-in-brief\">Read more</a></p></div></div></div>",
+                    "summary": "",
+                    "body_format": "html"
+                }
+            }
+        },
+        {
+            "id": 6,
+            "uuid": "45a7bf10-3567-46fd-949b-adb48d524892",
+            "type": "simple",
+            "placements": [
+                {
+                    "id": "vani_fundingen",
+                    "theme": "vani",
+                    "region": "hidden_blocks",
+                    "weight": -5,
+                    "status": true,
+                    "visibility": {
+                        "language": {
+                            "id": "language",
+                            "negate": false,
+                            "context_mapping": {
+                                "language": "@language.current_language_context:language_interface"
+                            },
+                            "langcodes": {
+                                "en": "en"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "vani_fundingen_2",
+                    "theme": "vani",
+                    "region": "footer_fourth",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": {
+                        "language": {
+                            "id": "language",
+                            "negate": false,
+                            "context_mapping": {
+                                "language": "@language.current_language_context:language_interface"
+                            },
+                            "langcodes": {
+                                "en": "en"
+                            }
+                        }
+                    }
+                }
+            ],
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "info": "funding en",
+                    "status": true,
+                    "changed": "2024-11-26T08:27:28+00:00",
+                    "body": "<p class=\"MsoNormal\" style=\"line-height:106%;margin-bottom:8.0pt;\"><span style=\"font-size:11.0pt;line-height:106%;\">The research project DeMoLiSH is implemented in the framework of H.F.R.I call “Basic research Financing (Horizontal support of all Sciences)” under the National Recovery and Resilience Plan “Greece 2.0” funded by the European Union – NextGenerationEU (H.F.R.I. Project Number: 15576).<o:p></o:p></span></p>",
+                    "summary": "",
+                    "body_format": "html"
+                }
+            }
+        },
+        {
+            "id": 7,
+            "uuid": "f0f2a507-6cd9-4687-bf3a-3cb6c7908852",
+            "type": "simple",
+            "placements": [
+                {
+                    "id": "vani_fundingel",
+                    "theme": "vani",
+                    "region": "footer_fourth",
+                    "weight": 0,
+                    "status": true,
+                    "visibility": {
+                        "language": {
+                            "id": "language",
+                            "negate": false,
+                            "context_mapping": {
+                                "language": "@language.current_language_context:language_interface"
+                            },
+                            "langcodes": {
+                                "el": "el"
+                            }
+                        }
+                    }
+                }
+            ],
+            "translations": {
+                "en": {
+                    "langcode": "en",
+                    "info": "funding el",
+                    "status": true,
+                    "changed": "2024-11-26T08:27:46+00:00",
+                    "body": "<p class=\"MsoNormal\" style=\"line-height:106%;margin-bottom:8.0pt;\"><span style=\"font-size:11.0pt;line-height:106%;\">Το ερευνητικό Έργο με τίτλο&nbsp;DeMoLiSH υλοποιείται στο πλαίσιο της δράσης του ΕΛ.ΙΔ.Ε.Κ. «Χρηματοδότηση της Βασικής Έρευνας (Οριζόντια υποστήριξη όλων των Επιστημών)» του Εθνικού Σχεδίου Ανάκαμψης και Ανθεκτικότητας «Ελλάδα 2.0» με τη χρηματοδότηση της Ευρωπαϊκής Ένωσης – NextGenerationEU (Αριθμός Έργου ΕΛ.ΙΔ.Ε.Κ.:&nbsp;&nbsp;15576).<o:p></o:p></span></p>",
+                    "summary": "",
+                    "body_format": "html"
+                }
+            }
+        }
+    ]
+}

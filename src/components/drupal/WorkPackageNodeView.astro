@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import workPackagesData from '../../data/nodes/work_packages.json';
+import taxonomiesData from '../../data/taxonomies.json';
+import { type LangCode } from '../../data/site';
+
+interface Props {
+  nid: number;
+  lang: LangCode;
+}
+
+const { nid, lang } = Astro.props;
+
+const wpMap = workPackagesData as Record<string, typeof workPackagesData.en>;
+const langNodes = wpMap[lang] ?? [];
+const enNodes = workPackagesData.en ?? [];
+const wp = langNodes.find((n) => n.nid === nid) ?? enNodes.find((n) => n.nid === nid);
+
+if (!wp) {
+  throw new Error(`Work package nid=${nid} not found`);
+}
+
+const termsByLang = taxonomiesData.by_language[lang] ?? taxonomiesData.by_language.en ?? [];
+const getPartnerLabel = (tid: number, fallback: string) => {
+  const term = termsByLang.find((t) => t.tid === tid);
+  return term?.name ?? fallback;
+};
+---
+
+<BaseLayout title={wp.title} lang={lang} nodeType="work_packages">
+  <article class="node node--type-work-packages node--view-mode-full">
+    <div class="node__content">
+      {wp.number && (
+        <div class="field field--name-field-number field--label-above">
+          <div class="field__label">Number</div>
+          <div class="field__item">{wp.number}</div>
+        </div>
+      )}
+      {wp.activity_type && (
+        <div class="field field--name-field-activity-type field--label-above">
+          <div class="field__label">Activity type</div>
+          <div class="field__item">{wp.activity_type}</div>
+        </div>
+      )}
+      {wp.supervising_partner && wp.supervising_partner.length > 0 && (
+        <div class="field field--name-field-supervising-partner field--label-above">
+          <div class="field__label">Supervising Partner</div>
+          <div class="field__items">
+            {wp.supervising_partner.map((p) => (
+              <div class="field__item">{getPartnerLabel(p.target_id, p.label)}</div>
+            ))}
+          </div>
+        </div>
+      )}
+      {wp.body && (
+        <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item" set:html={wp.body} />
+      )}
+    </div>
+  </article>
+</BaseLayout>

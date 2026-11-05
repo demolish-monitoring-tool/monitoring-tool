@@ -1,45 +1,141 @@
 ---
-import { navItems, site } from '../data/site';
-import { telHref } from '../utils/phone';
+import blocksData from '../data/blocks.json';
+import { site, type LangCode } from '../data/site';
 
+interface Props {
+  lang?: LangCode;
+}
+
+const { lang = 'en' } = Astro.props;
 const year = new Date().getFullYear();
+
+const footerLogoBlock = blocksData.blocks.find((b) => b.id === 1 && b.langcode === 'en');
+const fundingBlock =
+  lang === 'el'
+    ? blocksData.blocks.find((b) => b.id === 7 && b.langcode === 'el')
+    : blocksData.blocks.find((b) => b.id === 6 && b.langcode === 'en');
 ---
 
-<footer class="footer aw-footer">
-  <div class="container">
-    <div class="columns is-multiline">
-      <div class="column is-5">
-        <p class="title is-5 mb-2">{site.name}</p>
-        <p>{site.tagline}</p>
+<footer class="footer">
+  <section class="footer-blocks">
+    <div class="container footer-container">
+      <div class="footer-block">
+        <div class="region region-footer-first">
+          <div id="block-vani-footerlogo" class="block block-block-content">
+            <div class="block-content" set:html={footerLogoBlock?.body ?? ''} />
+          </div>
+        </div>
       </div>
-
-      <div class="column is-3">
-        <p class="has-text-weight-semibold mb-3">Explore</p>
-        <ul>
-          {
-            navItems.map((item) => (
-              <li class="mb-1">
-                <a href={item.href}>{item.label}</a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-
-      <div class="column is-4">
-        <p class="has-text-weight-semibold mb-3">Visit</p>
-        <p class="mb-1">{site.address}</p>
-        <p class="mb-1">
-          <a href={`mailto:${site.email}`}>{site.email}</a>
-        </p>
-        <p>
-          <a href={telHref(site.phone)}>{site.phone}</a>
-        </p>
+      <div class="footer-block"></div>
+      <div class="footer-block"></div>
+      <div class="footer-block">
+        <div class="region region-footer-fourth">
+          <div id="block-vani-funding" class="block block-block-content">
+            <div class="block-content" set:html={fundingBlock?.body ?? ''} />
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <hr />
-
-    <p class="is-size-7">© {year} {site.name}. Built with Astro and Bulma.</p>
-  </div>
+  <section class="footer-bottom-middle">
+    <div class="container footer-bottom-middle-container">
+      <div class="copyright">
+        &copy; {year} {site.name}, All rights reserved.
+      </div>
+      <div class="footer-bottom-middle-right">
+        <ul class="social-icons">
+          <li>
+            <a href={site.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="icon-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href={site.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <i class="icon-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </footer>
+
+<div class="scrolltop"><div class="scrolltop-icon">&#x2191;</div></div>
+
+<script is:inline>
+  (function () {
+    // Mobile menu toggle
+    var mobileBtn = document.querySelector('.mobile-menu');
+    var closeMobileBtn = document.querySelector('.close-mobile-menu');
+    var primaryMenuWrapper = document.querySelector('.primary-menu-wrapper');
+    if (mobileBtn && primaryMenuWrapper) {
+      mobileBtn.addEventListener('click', function () {
+        primaryMenuWrapper.classList.toggle('active-menu');
+      });
+    }
+    if (closeMobileBtn && primaryMenuWrapper) {
+      closeMobileBtn.addEventListener('click', function () {
+        primaryMenuWrapper.classList.toggle('active-menu');
+      });
+    }
+
+    // Full page search overlay
+    var searchIcon = document.querySelector('.search-icon');
+    var searchBox = document.querySelector('.search-box');
+    var closeBtns = document.querySelectorAll('.search-box-close');
+    if (searchIcon && searchBox) {
+      searchIcon.addEventListener('click', function (e) {
+        e.preventDefault();
+        searchBox.classList.add('open');
+        var input = searchBox.querySelector('input[type="text"]');
+        if (input) input.focus();
+      });
+      closeBtns.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          searchBox.classList.remove('open');
+        });
+      });
+      document.addEventListener('keyup', function (e) {
+        if (e.key === 'Escape') {
+          searchBox.classList.remove('open');
+        }
+      });
+    }
+
+    // Bootstrap language switcher dropdown toggle
+    var dropdownToggles = document.querySelectorAll('[data-bs-toggle="dropdown"]');
+    dropdownToggles.forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var menu = toggle.nextElementSibling;
+        if (menu && menu.classList.contains('dropdown-menu')) {
+          var isOpen = menu.classList.contains('show');
+          menu.classList.toggle('show', !isOpen);
+          toggle.setAttribute('aria-expanded', String(!isOpen));
+        }
+      });
+    });
+    document.addEventListener('click', function () {
+      document.querySelectorAll('.dropdown-menu.show').forEach(function (menu) {
+        menu.classList.remove('show');
+      });
+    });
+
+    // Scroll to top button
+    var scrollTopBtn = document.querySelector('.scrolltop');
+    if (scrollTopBtn) {
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 80) {
+          scrollTopBtn.style.display = 'grid';
+        } else {
+          scrollTopBtn.style.display = 'none';
+        }
+      });
+      scrollTopBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  })();
+</script>

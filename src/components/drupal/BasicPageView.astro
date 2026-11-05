@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import basicPagesData from '../../data/nodes/basic_page.json';
+import blocksData from '../../data/blocks.json';
+import { type LangCode } from '../../data/site';
+
+interface Props {
+  nid: number;
+  lang: LangCode;
+}
+
+const { nid, lang } = Astro.props;
+
+const langNodes = basicPagesData[lang] ?? [];
+const enNodes = basicPagesData.en ?? [];
+const node = langNodes.find((n) => n.nid === nid) ?? enNodes.find((n) => n.nid === nid);
+
+if (!node) {
+  throw new Error(`Basic page nid=${nid} not found`);
+}
+
+const wordCloudBlock = blocksData.blocks.find((b) => b.id === 4 && b.langcode === 'en');
+const useTwoColWordCloud = nid === 12 && lang === 'en';
+---
+
+<BaseLayout title={node.title} lang={lang} nodeType="basic_page">
+  <article class="node node--type-basic-page node--view-mode-full">
+    <div class="node__content">
+      {
+        useTwoColWordCloud ? (
+          <div class="layout layout--twocol-section layout--twocol-section--25-75">
+            <div class="layout__region layout__region--first">
+              <div class="block block-block-content">
+                <div class="block-content" set:html={wordCloudBlock?.body ?? ''} />
+              </div>
+            </div>
+            <div class="layout__region layout__region--second">
+              <div class="block block-layout-builder block-field-blocknodebasic-pagebody">
+                <div class="block-content" set:html={node.body ?? ''} />
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item" set:html={node.body ?? ''} />
+        )
+      }
+    </div>
+  </article>
+</BaseLayout>

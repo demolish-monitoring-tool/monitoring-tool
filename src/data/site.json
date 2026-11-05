@@ -1,0 +1,26 @@
+{
+    "exported_at": "2026-11-05T17:34:14+00:00",
+    "site": {
+        "name": "demolish",
+        "slogan": "",
+        "mail": "connect@demolish.gr",
+        "page": {
+            "403": "",
+            "404": "",
+            "front": "/node/2"
+        },
+        "default_langcode": "en"
+    },
+    "languages": {
+        "en": {
+            "id": "en",
+            "name": "English",
+            "is_default": true
+        },
+        "el": {
+            "id": "el",
+            "name": "Greek",
+            "is_default": false
+        }
+    }
+}

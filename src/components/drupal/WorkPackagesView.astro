@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import workPackagesData from '../../data/nodes/work_packages.json';
+import taxonomiesData from '../../data/taxonomies.json';
+import { localizeUrl, type LangCode } from '../../data/site';
+
+interface Props {
+  lang: LangCode;
+}
+
+const { lang } = Astro.props;
+
+const wpMap = workPackagesData as Record<string, typeof workPackagesData.en>;
+const rawNodes = (wpMap[lang] && wpMap[lang].length > 0 ? wpMap[lang] : workPackagesData.en) ?? [];
+
+const workPackages = [...rawNodes]
+  .filter((wp) => wp.status)
+  .sort((a, b) => new Date(a.created).getTime() - new Date(b.created).getTime());
+
+const termsByLang = taxonomiesData.by_language[lang] ?? taxonomiesData.by_language.en ?? [];
+const getPartnerLabel = (tid: number, fallback: string) => {
+  const term = termsByLang.find((t) => t.tid === tid);
+  return term?.name ?? fallback;
+};
+
+const pageTitle = lang === 'el' ? 'Πακέτα Εργασίας' : 'Work Packages';
+---
+
+<BaseLayout title={pageTitle} lang={lang}>
+  <div class="views-element-container">
+    <div class="view view-work-packages view-id-work_packages view-display-id-page_1">
+      <div class="view-content">
+        <table class="views-table views-view-table cols-4">
+          <thead>
+            <tr>
+              <th class="views-field views-field-field-number" scope="col">Number</th>
+              <th class="views-field views-field-title" scope="col"></th>
+              <th class="views-field views-field-field-activity-type" scope="col">Activity type</th>
+              <th class="views-field views-field-field-supervising-partner" scope="col">
+                Supervising Partner
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              workPackages.map((wp) => (
+                <tr>
+                  <td class="views-field views-field-field-number">{wp.number}</td>
+                  <td class="views-field views-field-title">
+                    <a href={localizeUrl(wp.path_alias || `/project/${wp.slug}`, lang)}>
+                      {wp.title}
+                    </a>
+                  </td>
+                  <td class="views-field views-field-field-activity-type">{wp.activity_type}</td>
+                  <td class="views-field views-field-field-supervising-partner">
+                    {(wp.supervising_partner ?? [])
+                      .map((p) => getPartnerLabel(p.target_id, p.label))
+                      .join(', ')}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

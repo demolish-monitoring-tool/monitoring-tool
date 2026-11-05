@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import eventsData from '../../data/nodes/events.json';
+import { localizeUrl, type LangCode } from '../../data/site';
+
+interface Props {
+  lang: LangCode;
+}
+
+const { lang } = Astro.props;
+
+const rawEvents = (eventsData as Record<string, typeof eventsData.en>)[lang] ?? eventsData.en ?? [];
+const events = rawEvents.filter((e) => e.status);
+const pageTitle = lang === 'el' ? 'Εκδηλώσεις' : 'Events';
+---
+
+<BaseLayout title={pageTitle} lang={lang}>
+  <div class="views-element-container">
+    <div class="view view-all-events view-id-all_events view-display-id-page_1">
+      <div class="view-content">
+        {
+          events.map((event) => (
+            <div class="views-row">
+              <div class="views-field views-field-nothing">
+                <span class="field-content">
+                  <div>
+                    <div class="d-flex">
+                      <div>
+                        <h4>
+                          <a href={localizeUrl(event.path_alias || `/all-events/${event.slug}`, lang)}>
+                            {event.title}
+                          </a>
+                        </h4>
+                        {event.event_date?.value && <p>{event.event_date.value}</p>}
+                        {event.location && (
+                          <div class="d-flex">
+                            <img
+                              src="/files/bootstrap-icons-1.11.2/pin-map-fill.svg"
+                              width="20"
+                              height="20"
+                              alt="location"
+                            />
+                            <p>{event.location}</p>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                    <div set:html={event.body} />
+                  </div>
+                </span>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
