@@ -71,7 +71,6 @@ const defaultAvatar = '/files/2023-12/vecteezy_simple-user-default-icon_24983914
                 <div class="view-content">
                   {piAttachment.map((member) => {
                     const photoUrl = member.profile_photo?.url || defaultAvatar;
-                    const prodFallback = `https://demolish.gr/sites/default${photoUrl}`;
                     const orgLabel = getOrgLabel(
                       member.team_organization?.target_id,
                       member.team_organization?.label,
@@ -89,7 +88,7 @@ const defaultAvatar = '/files/2023-12/vecteezy_simple-user-default-icon_24983914
                                         <img
                                           src={photoUrl}
                                           alt={member.profile_photo?.alt || member.title}
-                                          onerror={`if(!this.dataset.triedProd){this.dataset.triedProd='1';this.src='${prodFallback}';}else{this.onerror=null;this.src='${defaultAvatar}';}`}
+                                          onerror={`this.onerror=null;this.src='${defaultAvatar}';`}
                                         />
                                         <div>
                                           <h4>{member.title}</h4>
@@ -142,7 +141,6 @@ const defaultAvatar = '/files/2023-12/vecteezy_simple-user-default-icon_24983914
         {
           mainMembers.map((member) => {
             const photoUrl = member.profile_photo?.url || defaultAvatar;
-            const prodFallback = `https://demolish.gr/sites/default${photoUrl}`;
             const orgLabel = getOrgLabel(
               member.team_organization?.target_id,
               member.team_organization?.label,
@@ -160,7 +158,7 @@ const defaultAvatar = '/files/2023-12/vecteezy_simple-user-default-icon_24983914
                                 <img
                                   src={photoUrl}
                                   alt={member.profile_photo?.alt || member.title}
-                                  onerror={`if(!this.dataset.triedProd){this.dataset.triedProd='1';this.src='${prodFallback}';}else{this.onerror=null;this.src='${defaultAvatar}';}`}
+                                  onerror={`this.onerror=null;this.src='${defaultAvatar}';`}
                                 />
                                 <div>
                                   <h4>{member.title}</h4>

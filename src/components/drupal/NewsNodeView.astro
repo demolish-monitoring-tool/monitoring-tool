@@ -18,10 +18,7 @@ if (!item) {
   throw new Error(`News node nid=${nid} not found`);
 }
 
-const bodyHtml = (item.body ?? '').replace(
-  /src="\/files\/([^"]+)"/g,
-  'src="/files/$1" onerror="if(!this.dataset.triedProd){this.dataset.triedProd=\'1\';this.src=\'https://demolish.gr/sites/default/files/$1\';}"',
-);
+const bodyHtml = item.body ?? '';
 ---
 
 <BaseLayout title={item.title} lang={lang} nodeType="news">
@@ -35,7 +32,6 @@ const bodyHtml = (item.body ?? '').replace(
               width="220"
               height="220"
               alt={item.news_image.alt || item.title}
-              onerror={`if(!this.dataset.triedProd){this.dataset.triedProd='1';this.src='https://demolish.gr/sites/default${item.news_image.url}';}`}
             />
           </div>
         ) : (

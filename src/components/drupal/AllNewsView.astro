@@ -49,13 +49,7 @@ const pageTitle = lang === 'el' ? 'Νέα & Εκδηλώσεις' : 'All news';
                 </span>
               </div>
               <div class="views-field views-field-body">
-                <div
-                  class="field-content"
-                  set:html={(item.body ?? '').replace(
-                    /src="\/files\/([^"]+)"/g,
-                    'src="/files/$1" onerror="if(!this.dataset.triedProd){this.dataset.triedProd=\'1\';this.src=\'https://demolish.gr/sites/default/files/$1\';}"',
-                  )}
-                />
+                <div class="field-content" set:html={item.body} />
               </div>
             </div>
           ))

@@ -5,6 +5,7 @@ import newsData from '../../data/nodes/news.json';
 export function getStaticPaths() {
   const paths = new Map<string, number>();
   for (const item of newsData.en ?? []) {
+    if (!item.status) continue;
     if (item.slug) paths.set(item.slug, item.nid);
     if (item.path_alias?.startsWith('/all-news/')) {
       paths.set(item.path_alias.replace(/^\/all-news\//, ''), item.nid);

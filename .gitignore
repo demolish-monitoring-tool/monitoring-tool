@@ -26,3 +26,7 @@ pnpm-debug.log*
 
 # docs compression backups
 AGENTS.original.md
+
+# Drupal migration reference dumps (not needed in production)
+src/data/files_manifest.json
+src/data/full_drupal_export.json
