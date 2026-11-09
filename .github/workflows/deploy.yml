@@ -35,7 +35,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --approve-builds
+        run: pnpm install --allow-build
 
       - name: Build site
         run: pnpm build
