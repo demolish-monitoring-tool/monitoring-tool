@@ -9,7 +9,7 @@ export default defineConfig({
   // Template placeholder — replace with your real domain before deploying
   // so the sitemap and canonical URLs point at the live site.
   site: 'https://demolish-monitoring-tool.github.io',
-  base: '/demolish-monitoring/',
+  base: '/monitoring-tool/',
   integrations: [
         sitemap(),
         react()
