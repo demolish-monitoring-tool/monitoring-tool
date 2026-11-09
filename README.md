@@ -1,9 +1,4 @@
-# Astro Wellness — Gym Template
-
-A modern, dark, energetic **gym template** built with [Astro](https://astro.build)
-and [Bulma](https://bulma.io). It ships with a full set of pages, an SEO-ready
-head, a Markdown blog, and clean, typed sample content — ready to adopt for your
-own gym, studio, or training brand.
+# Build with Astro 
 
 ## Features
 
