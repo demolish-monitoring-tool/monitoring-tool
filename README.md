@@ -139,16 +139,3 @@ host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, etc.). `public/_headers`
 applies Netlify-compatible security headers (CSP, HSTS, X-Frame-Options…);
 other hosts may ignore it — set equivalent headers there.
 
-## Publishing to astro.build/themes
-
-The template is ready for the [Astro template gallery](https://astro.build/themes/).
-Before submitting:
-
-1. Create a **repository from this template** on GitHub and push the code.
-2. Set repo **topics**: `astro`, `bulma`, `template`, `typescript`, plus any
-   niche tags (e.g. `gym`, `hacktoberfest`).
-3. Deploy the demo (Netlify, Vercel, …) and add the **live demo link** to the
-   [Live demo](#live-demo) section above.
-4. Keep the `LICENSE` (MIT) and point `repo` metadata in `package.json` at the
-   new repository.
-5. Submit the repo through the astro.build themes form.
