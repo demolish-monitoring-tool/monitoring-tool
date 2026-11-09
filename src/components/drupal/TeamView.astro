@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import teamData from '../../data/nodes/team_member.json';
 import taxonomiesData from '../../data/taxonomies.json';
-import { type LangCode } from '../../data/site';
+import { withBase, withBaseHtml, type LangCode } from '../../data/site';
 
 interface Props {
   filter: 'all' | 'panteion' | 'athena' | 'other';
@@ -57,7 +57,8 @@ if (filter === 'panteion') {
   mainMembers = allMembers.filter((m) => !m.pi).sort((a, b) => a.title.localeCompare(b.title));
 }
 
-const defaultAvatar = '/files/2023-12/vecteezy_simple-user-default-icon_24983914.png';
+const defaultAvatar = withBase('/files/2023-12/vecteezy_simple-user-default-icon_24983914.png');
+const linkIconUrl = withBase('/files/bootstrap-icons-1.11.2/link.svg');
 ---
 
 <BaseLayout title={pageTitle} lang={lang}>
@@ -67,7 +68,7 @@ const defaultAvatar = '/files/2023-12/vecteezy_simple-user-default-icon_24983914
         <div class="attachment attachment-before">
           <div class="view-content">
             {piAttachment.map((member) => {
-              const photoUrl = member.profile_photo?.url || defaultAvatar;
+              const photoUrl = member.profile_photo?.url ? withBase(member.profile_photo.url) : defaultAvatar;
               const orgLabel = getOrgLabel(
                 member.team_organization?.target_id,
                 member.team_organization?.label,
@@ -96,11 +97,11 @@ const defaultAvatar = '/files/2023-12/vecteezy_simple-user-default-icon_24983914
                           <div class="flip__description">
                             <div>
                               <h4>Brief Role in the Project</h4>
-                              <div set:html={member.body} />
+                              <div set:html={withBaseHtml(member.body)} />
                               {member.personal_url?.url && (
                                 <div class="d-flex">
                                   <img
-                                    src="/files/bootstrap-icons-1.11.2/link.svg"
+                                    src={linkIconUrl}
                                     width="20"
                                     height="20"
                                     alt="link"
@@ -131,7 +132,7 @@ const defaultAvatar = '/files/2023-12/vecteezy_simple-user-default-icon_24983914
     <div class="view-content">
       {
         mainMembers.map((member) => {
-          const photoUrl = member.profile_photo?.url || defaultAvatar;
+          const photoUrl = member.profile_photo?.url ? withBase(member.profile_photo.url) : defaultAvatar;
           const orgLabel = getOrgLabel(
             member.team_organization?.target_id,
             member.team_organization?.label,
@@ -160,11 +161,11 @@ const defaultAvatar = '/files/2023-12/vecteezy_simple-user-default-icon_24983914
                       <div class="flip__description">
                         <div>
                           <h4>Brief Role in the Project</h4>
-                          <div set:html={member.body} />
+                          <div set:html={withBaseHtml(member.body)} />
                           {member.personal_url?.url && (
                             <div class="d-flex">
                               <img
-                                src="/files/bootstrap-icons-1.11.2/link.svg"
+                                src={linkIconUrl}
                                 width="20"
                                 height="20"
                                 alt="link"

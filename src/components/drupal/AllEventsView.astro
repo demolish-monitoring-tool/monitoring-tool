@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import eventsData from '../../data/nodes/events.json';
-import { localizeUrl, type LangCode } from '../../data/site';
+import { localizeUrl, withBase, withBaseHtml, type LangCode } from '../../data/site';
 
 interface Props {
   lang: LangCode;
@@ -30,7 +30,7 @@ const pageTitle = lang === 'el' ? 'Εκδηλώσεις' : 'Events';
               {event.location && (
                 <div class="d-flex">
                   <img
-                    src="/files/bootstrap-icons-1.11.2/pin-map-fill.svg"
+                    src={withBase('/files/bootstrap-icons-1.11.2/pin-map-fill.svg')}
                     width="20"
                     height="20"
                     alt="location"
@@ -39,7 +39,7 @@ const pageTitle = lang === 'el' ? 'Εκδηλώσεις' : 'Events';
                 </div>
               )}
             </div>
-            <div set:html={event.body} />
+            <div set:html={withBaseHtml(event.body)} />
           </div>
         ))
       }

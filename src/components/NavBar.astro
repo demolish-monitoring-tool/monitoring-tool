@@ -1,6 +1,6 @@
 ---
 import menusData from '../data/menus.json';
-import { getLanguageSwitchUrls, localizeUrl, type LangCode } from '../data/site';
+import { getLanguageSwitchUrls, localizeUrl, withBase, type LangCode } from '../data/site';
 
 interface Props {
   lang?: LangCode;
@@ -12,8 +12,8 @@ const { lang = 'en', isFront = false, pageTitle = '' } = Astro.props;
 
 const pathname = Astro.url.pathname;
 const switchUrls = getLanguageSwitchUrls(pathname);
-const homeUrl = lang === 'el' ? '/el' : '/';
-const searchAction = lang === 'el' ? '/el/search' : '/search';
+const homeUrl = localizeUrl('/', lang);
+const searchAction = localizeUrl('/search', lang);
 
 interface MenuItem {
   id: number | string;
@@ -70,7 +70,7 @@ const isActive = (href: string): boolean => {
         <div class="site-branding">
           <div class="site-logo">
             <a href={homeUrl} title="Home" rel="home">
-              <img src="/files/path_newFont_bold.png" alt="Home" />
+              <img src={withBase('/files/path_newFont_bold.png')} alt="Home" />
             </a>
           </div>
         </div>
@@ -158,7 +158,7 @@ const isActive = (href: string): boolean => {
         </div>
         <div class="full-page-search">
           <div class="search-icon">
-            <a href="#" aria-label="Open search"><img src="/themes/vani/images/search.svg" alt="search icon" /></a>
+            <a href="#" aria-label="Open search"><img src={withBase('/themes/vani/images/search.svg')} alt="search icon" /></a>
           </div>
           <div class="search-box">
             <div class="search-box-close"></div>
@@ -214,11 +214,11 @@ const isActive = (href: string): boolean => {
             </ul>
           </div>
           <div class="slider-image">
-            <img src="/files/undraw_team_up_re_84ok.svg" alt="slider image" />
+            <img src={withBase('/files/undraw_team_up_re_84ok.svg')} alt="slider image" />
           </div>
         </div>
         <div class="slider-svg">
-          <img src="/themes/vani/images/slider.svg" alt="svg" />
+          <img src={withBase('/themes/vani/images/slider.svg')} alt="svg" />
         </div>
       </section>
     ) : (

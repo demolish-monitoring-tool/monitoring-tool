@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import newsData from '../../data/nodes/news.json';
-import { type LangCode } from '../../data/site';
+import { withBase, withBaseHtml, type LangCode } from '../../data/site';
 
 interface Props {
   nid: number;
@@ -28,7 +28,7 @@ const bodyHtml = item.body ?? '';
         item.news_image && (
           <div class="field">
             <img
-              src={item.news_image.url}
+              src={withBase(item.news_image.url)}
               width="220"
               height="220"
               alt={item.news_image.alt || item.title}
@@ -36,7 +36,7 @@ const bodyHtml = item.body ?? '';
           </div>
         )
       }
-      <div class="field" set:html={bodyHtml} />
+      <div class="field" set:html={withBaseHtml(bodyHtml)} />
       {
         item.attached_files && item.attached_files.length > 0 && (
           <div class="field">
@@ -45,7 +45,7 @@ const bodyHtml = item.body ?? '';
               {item.attached_files.map((file) => (
                 <div class="field__item">
                   <span class="file">
-                    <a href={file.url} target="_blank" rel="noopener noreferrer">
+                    <a href={withBase(file.url)} target="_blank" rel="noopener noreferrer">
                       {file.description || file.filename}
                     </a>
                   </span>

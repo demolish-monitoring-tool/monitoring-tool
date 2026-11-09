@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import blocksData from '../../data/blocks.json';
 import blocksWithIconData from '../../data/nodes/blocks_with_icon.json';
-import { localizeUrl, site, type LangCode } from '../../data/site';
+import { localizeUrl, site, withBase, withBaseHtml, type LangCode } from '../../data/site';
 
 interface Props {
   lang: LangCode;
@@ -35,7 +35,7 @@ const iconCards = [...(blocksWithIconData[lang] ?? blocksWithIconData.en)].sort(
     <div class="container">
       <div class="region region-highlighted">
         <div class="block">
-          <div class="block-content" set:html={logosBlock?.body ?? ''} />
+          <div class="block-content" set:html={withBaseHtml(logosBlock?.body)} />
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@ const iconCards = [...(blocksWithIconData[lang] ?? blocksWithIconData.en)].sort(
                         <div>
                           {card.svg_icon && (
                             <img
-                              src={card.svg_icon.url}
+                              src={withBase(card.svg_icon.url)}
                               width="50"
                               height="50"
                               alt={card.title}
@@ -63,7 +63,7 @@ const iconCards = [...(blocksWithIconData[lang] ?? blocksWithIconData.en)].sort(
                           )}
                         </div>
                         <h3>{card.title}</h3>
-                        <div set:html={card.body} />
+                        <div set:html={withBaseHtml(card.body)} />
                         {card.block_item_redirect_to && (
                           <a
                             class="button-link"
@@ -90,7 +90,7 @@ const iconCards = [...(blocksWithIconData[lang] ?? blocksWithIconData.en)].sort(
         <div class="home-block-cicle3"></div>
         <div class="container">
           <h2 class="block-title">{impactTitle}</h2>
-          <div class="block-content" set:html={localizedImpactHtml} />
+          <div class="block-content" set:html={withBaseHtml(localizedImpactHtml)} />
         </div>
       </div>
     </div>

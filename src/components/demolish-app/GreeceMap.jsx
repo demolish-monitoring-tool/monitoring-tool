@@ -4,7 +4,8 @@ import { scaleLinear } from "d3-scale";
 import { Button, Box, FormControl, Select, MenuItem, Stack, InputLabel } from "@mui/material";
 import events from "./data/events.json";
 
-const geoUrl = "/maps/gadm41_GRC_3.json";
+const baseUrl = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+const geoUrl = `${baseUrl}/maps/gadm41_GRC_3.json`;
 
 const GreeceMap = () => {
   const [tooltipContent, setTooltipContent] = useState("");

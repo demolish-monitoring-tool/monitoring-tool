@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import newsData from '../../data/nodes/news.json';
-import { localizeUrl, type LangCode } from '../../data/site';
+import { localizeUrl, withBaseHtml, type LangCode } from '../../data/site';
 
 interface Props {
   lang: LangCode;
@@ -43,7 +43,7 @@ const pageTitle = lang === 'el' ? 'Νέα & Εκδηλώσεις' : 'All news';
             <div class="views-field-created">
               <time datetime={item.created}>{formatDrupalMediumDate(item.created)}</time>
             </div>
-            <div set:html={item.body} />
+            <div set:html={withBaseHtml(item.body)} />
           </div>
         ))
       }

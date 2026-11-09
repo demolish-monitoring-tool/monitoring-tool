@@ -1,6 +1,6 @@
 ---
 import blocksData from '../data/blocks.json';
-import { site, type LangCode } from '../data/site';
+import { site, withBaseHtml, type LangCode } from '../data/site';
 
 interface Props {
   lang?: LangCode;
@@ -21,14 +21,14 @@ const fundingBlock =
     <div class="container footer-container">
       <div class="footer-block">
         <div class="block">
-          <div class="block-content" set:html={footerLogoBlock?.body ?? ''} />
+          <div class="block-content" set:html={withBaseHtml(footerLogoBlock?.body)} />
         </div>
       </div>
       <div class="footer-block"></div>
       <div class="footer-block"></div>
       <div class="footer-block">
         <div class="block">
-          <div class="block-content" set:html={fundingBlock?.body ?? ''} />
+          <div class="block-content" set:html={withBaseHtml(fundingBlock?.body)} />
         </div>
       </div>
     </div>

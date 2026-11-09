@@ -29,7 +29,7 @@ const searchableItems = fallbackNodes
   }));
 
 const pageTitle = lang === 'el' ? 'Αναζήτηση' : 'Search';
-const searchAction = lang === 'el' ? '/el/search' : '/search';
+const searchAction = localizeUrl('/search', lang);
 ---
 
 <BaseLayout title={pageTitle} lang={lang}>

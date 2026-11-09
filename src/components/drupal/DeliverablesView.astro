@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import deliverablesData from '../../data/nodes/deliverables.json';
-import { type LangCode } from '../../data/site';
+import { withBase, withBaseHtml, type LangCode } from '../../data/site';
 
 interface Props {
   lang: LangCode;
@@ -36,14 +36,14 @@ const pageTitle = lang === 'el' ? 'Παραδοτέα' : 'Deliverables';
             deliverables.map((item) => (
               <tr>
                 <td>{item.title}</td>
-                <td set:html={item.body} />
+                <td set:html={withBaseHtml(item.body)} />
                 <td>
                   {(() => {
                     const file = item.deliverable_file as { url: string; filename: string } | null;
                     return (
                       file && (
                         <span class="file">
-                          <a href={file.url} target="_blank" rel="noopener noreferrer">
+                          <a href={withBase(file.url)} target="_blank" rel="noopener noreferrer">
                             {file.filename}
                           </a>
                         </span>

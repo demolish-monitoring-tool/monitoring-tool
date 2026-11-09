@@ -1,7 +1,7 @@
 import rss from '@astrojs/rss';
 import type { APIContext } from 'astro';
 import { getCollection } from 'astro:content';
-import { site } from '../data/site';
+import { site, withBase } from '../data/site';
 
 export async function GET(context: APIContext) {
   const newsItems = await getCollection('news', ({ data }) => data.status && data.langcode === 'en');
@@ -17,7 +17,7 @@ export async function GET(context: APIContext) {
       title: item.data.title,
       description: item.data.summary || item.data.title,
       pubDate: new Date(item.data.created),
-      link: item.data.path_alias || `/all-news/${item.data.slug}`,
+      link: withBase(item.data.path_alias || `/all-news/${item.data.slug}`),
     })),
   });
 }

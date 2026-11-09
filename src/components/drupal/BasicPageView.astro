@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import basicPagesData from '../../data/nodes/basic_page.json';
 import blocksData from '../../data/blocks.json';
-import { type LangCode } from '../../data/site';
+import { withBaseHtml, type LangCode } from '../../data/site';
 
 interface Props {
   nid: number;
@@ -31,17 +31,17 @@ const useTwoColWordCloud = nid === 12 && lang === 'en';
           <div class="layout layout--twocol-section layout--twocol-section--25-75">
             <div class="layout__region layout__region--first">
               <div class="block">
-                <div class="block-content" set:html={wordCloudBlock?.body ?? ''} />
+                <div class="block-content" set:html={withBaseHtml(wordCloudBlock?.body)} />
               </div>
             </div>
             <div class="layout__region layout__region--second">
               <div class="block">
-                <div class="block-content" set:html={node.body ?? ''} />
+                <div class="block-content" set:html={withBaseHtml(node.body)} />
               </div>
             </div>
           </div>
         ) : (
-          <div class="field" set:html={node.body ?? ''} />
+          <div class="field" set:html={withBaseHtml(node.body)} />
         )
       }
     </div>

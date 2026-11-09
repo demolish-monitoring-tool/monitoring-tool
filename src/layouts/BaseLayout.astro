@@ -1,7 +1,7 @@
 ---
 import Footer from '../components/Footer.astro';
 import NavBar from '../components/NavBar.astro';
-import { site, type LangCode } from '../data/site';
+import { site, withBase, type LangCode } from '../data/site';
 import '../assets/styles/main.scss';
 
 interface Props {
@@ -45,12 +45,12 @@ const bodyClasses = [
     <meta name="description" content={description} />
 
     <!-- Vani theme fonts, icons, and stylesheets -->
-    <link rel="stylesheet" href="/themes/vani/css/font.css" />
-    <link rel="stylesheet" href="/themes/vani/css/font-awesome.css" />
-    <link rel="stylesheet" href="/themes/vani/css/bootstrap-icons.css" />
-    <link rel="stylesheet" href="/libraries/bootstrap-languages/languages.css" />
-    <link rel="stylesheet" href="/themes/vani/css/style.css" />
-    <link rel="stylesheet" href="/themes/vani/css/custom.css" />
+    <link rel="stylesheet" href={withBase('/themes/vani/css/font.css')} />
+    <link rel="stylesheet" href={withBase('/themes/vani/css/font-awesome.css')} />
+    <link rel="stylesheet" href={withBase('/themes/vani/css/bootstrap-icons.css')} />
+    <link rel="stylesheet" href={withBase('/libraries/bootstrap-languages/languages.css')} />
+    <link rel="stylesheet" href={withBase('/themes/vani/css/style.css')} />
+    <link rel="stylesheet" href={withBase('/themes/vani/css/custom.css')} />
 
     <!-- Canonical + Open Graph -->
     <link rel="canonical" href={canonical} />
@@ -65,7 +65,7 @@ const bodyClasses = [
       rel="alternate"
       type="application/rss+xml"
       title={site.name}
-      href={new URL('/rss.xml', Astro.site ?? site.url)}
+      href={new URL(withBase('/rss.xml'), Astro.site ?? site.url)}
     />
 
     <link rel="icon" type="image/png" href={site.favicon} />

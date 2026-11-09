@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import workPackagesData from '../../data/nodes/work_packages.json';
 import taxonomiesData from '../../data/taxonomies.json';
-import { type LangCode } from '../../data/site';
+import { withBaseHtml, type LangCode } from '../../data/site';
 
 interface Props {
   nid: number;
@@ -53,7 +53,7 @@ const getPartnerLabel = (tid: number, fallback: string) => {
         </div>
       )}
       {wp.body && (
-        <div class="field" set:html={wp.body} />
+        <div class="field" set:html={withBaseHtml(wp.body)} />
       )}
     </div>
   </article>

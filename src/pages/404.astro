@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../data/site';
 ---
 
 <BaseLayout title="Page not found" lang="en">
   <div class="error-404">
     <p>The requested page could not be found.</p>
-    <p><a class="button-link" href="/">Return to Home</a></p>
+    <p><a class="button-link" href={withBase('/')}>Return to Home</a></p>
   </div>
 </BaseLayout>
