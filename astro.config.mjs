@@ -8,7 +8,8 @@ import svgr from 'vite-plugin-svgr';
 export default defineConfig({
   // Template placeholder — replace with your real domain before deploying
   // so the sitemap and canonical URLs point at the live site.
-  site: 'https://example.com',
+  site: 'https://demolish-monitoring-tool.github.io',
+  base: '/demolish-monitoring/',
   integrations: [
         sitemap(),
         react()
