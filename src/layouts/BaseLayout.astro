@@ -1,4 +1,5 @@
 ---
+import CookieBanner from '../components/CookieBanner.astro';
 import Footer from '../components/Footer.astro';
 import NavBar from '../components/NavBar.astro';
 import { site, withBase, type LangCode } from '../data/site';
@@ -72,21 +73,6 @@ const bodyClasses = [
     <title>{pageTitle}</title>
 
     {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
-
-    <!-- Matomo Tag Manager -->
-    <script is:inline>
-      var _mtm = (window._mtm = window._mtm || []);
-      _mtm.push({ 'mtm.startTime': new Date().getTime(), event: 'mtm.Start' });
-      (function () {
-        var d = document,
-          g = d.createElement('script'),
-          s = d.getElementsByTagName('script')[0];
-        g.async = true;
-        g.src = 'https://site-analytics.nlpli.ilsp.gr/js/container_zRjII776.js';
-        s.parentNode.insertBefore(g, s);
-      })();
-    </script>
-    <!-- End Matomo Tag Manager -->
   </head>
   <body class={bodyClasses}>
     <NavBar lang={lang} isFront={isFront} pageTitle={title} />
@@ -110,5 +96,6 @@ const bodyClasses = [
     </div>
 
     <Footer lang={lang} />
+    <CookieBanner lang={lang} />
   </body>
 </html>
